@@ -105,6 +105,9 @@ user：根据userId分级，文件ID
 | paper_id     | 论文ID       | str   | 论文ID（不唯一）                                             |
 | source       | 论文数据源   | str   | 论文来源                                                     |
 | paper_type   | 论文类型     | str   | 论文类型【system，系统；user，个人】                         |
+| style        | 风格偏好     | str   | 风格偏好【用户提示词】                                       |
+| language     | 语言         | str   | 语言 (ZH/EN)                                                 |
+| density      | 内容密度     | str   | 内容密度(sparse/medium/dense)                                |
 | file_path    | 结果（地址） | str   | 任务结果（地址）                                             |
 | images       | 图像地址     | array | slides图像地址                                               |
 | start_time   | 开始时间     | date  | 开始时间                                                     |

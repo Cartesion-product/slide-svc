@@ -1,0 +1,139 @@
+{
+  "plan": {
+    "output_type": "slides",
+    "sections": [
+      {
+        "id": "slide_01",
+        "title": "Goal-oriented Transmission Scheduling: Structure-guided DRL with a Unified Dual On-policy and Off-policy Approach",
+        "type": "opening",
+        "content": "作者：Jiazheng Chen, Wanchun Liu* (通讯作者)。本研究针对现代物联网与远程控制系统，提出了一种创新的深度强化学习框架 SUDO-DRL。该研究的核心在于将通信目标的重心从传统的“位级准确度”转向“应用驱动的目标”，例如在远程状态估计中最小化估计误差。通过数学证明最优策略的结构属性（单调性、渐近凸性），并将其融入 DRL 训练过程，本论文成功解决了大规模无线通信系统（如 40 设备 20 信道）中的复杂调度难题，克服了传统 DRL 算法在收敛性、稳定性和样本效率方面的局限性。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_02",
+        "title": "研究背景与问题定义：面向目标的传输调度",
+        "type": "content",
+        "content": "在多设备多信道无线通信系统中，N 个边缘设备共享 M 个有限衰落信道（M < N）。研究的核心问题是寻找最优调度策略 \\( \\pi \\)，以最小化所有设备的长期期望总成本。在远程状态估计场景下，这等同于最小化与信息年龄（AoI）相关的估计状态均方误差（MSE）。\n\n关键挑战包括：\n1. 高维状态空间：必须实时跟踪每个设备的 AoI 和信道状态，复杂度随设备数量呈指数级增长。\n2. 庞大的动作空间：对于 N 设备 M 信道，动作数为 \\( N! / (N-M)! \\)。在 10 设备 5 信道场景下，动作数已达 30,240 个，传统 MDP 求解器完全失效。\n3. 目标转向：从单纯的传输比特转向满足特定应用需求（Remote State Estimation）。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_03",
+        "title": "现有方法的局限性与研究空白",
+        "type": "content",
+        "content": "现有技术在处理大规模目标导向通信时存在显著缺陷：\n1. 传统方法：启发式方法（如 Whittle’s Index）虽快但非最优；动态规划（值迭代/策略迭代）面临“维度灾难”。\n2. 标准 DRL 算法：\n   - 离策（Off-Policy）如 DQN/DDPG：虽样本效率高，但在大型动态系统中训练极不稳定，40 设备场景下无法收敛。\n   - 同策（On-Policy）如 PPO/TRPO：稳定性好但样本效率极低，数据利用率差，易陷入局部最优。\n3. 理论结合缺失：现有研究多采用“暴力优化”，未深入挖掘 AoI 状态最优值函数的数学性质（如单调性、凸性），导致在大规模系统（20-40个传感器）中性能严重下降或不收敛。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_04",
+        "title": "SUDO-DRL 框架概述：理论与算法的统一",
+        "type": "content",
+        "content": "SUDO-DRL (Structure-guided Unified Dual On-off policy DRL) 是一个混合 DRL 框架。其核心思想是结合 PPO 的在线策略训练稳定性与 SAC 的离线策略采样效率，并利用推导出的理论结构属性指导训练。\n\n该框架包含四大创新支柱：\n1. 理论属性推导：证明了 V 函数的单调性与渐近凸性。\n2. 结构评分机制：将理论转化为 CM（单调性）、CC（凸性）、AM（策略单调性）评分。\n3. 统一双损失函数：通过权重 \\( \\beta_1, \\beta_2 \\) 桥接在线与离线更新。\n4. 结构引导回放池：基于评分进行选择性存储和优先级采样，确保模型学习高质量且符合物理规律的数据。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_05",
+        "title": "理论基础：最优策略的结构属性证明",
+        "type": "content",
+        "content": "本研究推导了最优调度策略的四个关键数学属性，作为算法设计的基石：\n1. V 函数单调性：证明了价值函数随 AoI 和信道状态增加而单调递增。\n2. 渐近凸性：首次在传输调度领域证明了 V 函数随 AoI 状态呈现渐近凸性。\n3. 策略单调性：最优策略关于信道状态具有单调性。\n4. 渐近贪婪结构：对于共址设备，当 AoI 极大时，最优策略倾向于强制调度，这为预训练提供了理论依据。\n\n目标函数定义为：\n\\[ \\min_{\\pi} \\lim_{T \\to \\infty} \\mathbb{E}^\\pi \\left[ \\sum_{t=1}^{T} \\sum_{n=1}^{N} \\gamma^t c_n(\\delta_{n,t}) \\right] \\]\n其中 \\( \\delta_{n,t} \\) 为设备 n 在时间 t 的 AoI。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_06",
+        "title": "结构属性评估框架与量化指标",
+        "type": "content",
+        "content": "为了将抽象的数学证明应用于 DRL 训练，研究提出了结构评分方案：\n1. CM Score (Critic-Monotonicity)：评估 Critic 网络预测的 V 值是否随 AoI 增加。若违反，则产生惩罚项：\n   \\( \\hat{V}_{\\mathrm{AoI}} = \\max(0, v(\\mathbf{s}; \\boldsymbol{\nu}) - v(\\hat{\\mathbf{s}}_{(n)}; \\boldsymbol{\nu})) \\)\n2. CC Score (Critic-Convexity)：评估 V 函数的二阶差分是否符合凸性：\n   \\( \\check{V}_{\\mathrm{AoI}} = \\max(0, 2v(\\mathbf{s}; \\boldsymbol{\nu}) - (v(\\check{\\mathbf{s}}_{(n)}; \\boldsymbol{\nu}) + v(\\hat{\\mathbf{s}}_{(n)}; \\boldsymbol{\nu}))) \\)\n3. AM Score (Actor-Monotonicity)：评估 Actor 网络的动作选择是否符合信道单调性逻辑。这些评分直接决定了数据是否进入回放池及采样的优先级。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_07",
+        "title": "统一双损失函数 (Unified Dual Loss Function)",
+        "type": "content",
+        "content": "SUDO-DRL 通过统一损失函数同时优化在线和离线目标：\n1. Critic 统一损失：\n   \\[ L_{\\mathrm{SUDO}}(\\boldsymbol{\nu}) = L_{\\mathrm{On}}(\\boldsymbol{\nu}) + \\beta_1 L_{\\mathrm{Off}}(\\boldsymbol{\nu}) + \\text{Structural Penalties} \\]\n   其中 \\( L_{\\mathrm{On}} \\) 处理当前轨迹的 TD 误差，\\( L_{\\mathrm{Off}} \\) 处理回放池历史数据的 TD 误差。\n2. Actor 统一损失：\n   \\[ L_{\\mathrm{SUDO}}(\\varphi) = L_{\\mathrm{On}}(\\varphi) + \\beta_2 L_{\\mathrm{Off}}(\\varphi) \\]\n   结合了 PPO 的裁剪损失（稳定性）与 SAC 风格的离线策略梯度（效率）。这种设计解决了传统离策方法在大规模调度中容易发散的问题。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_08",
+        "title": "回放池管理与结构引导预训练",
+        "type": "content",
+        "content": "1. 选择性存储：并非所有经验都值得学习。系统仅存储结构评分（CM, CC, AM）超过历史平均水平的轨迹，确保回放池中充满“高质量”样本。\n2. 优先级采样：采样概率 \\( P_b \\) 由结构评分和新近度（Recency）共同决定：\n   \\[ P_b \\triangleq \\frac{p_b \\cdot \\varrho^b}{\\sum (p_b \\cdot \\varrho^b)} \\]\n3. 渐近贪婪预训练：在训练初期（前 \\( 10 \\times N \\) 个回合），利用定理 5 的贪婪结构指导动作选择。这为神经网络提供了一个接近最优的初始搜索空间，避免了盲目探索，将收敛速度提升了约 40%。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_09",
+        "title": "实验设置：远程状态估计仿真",
+        "type": "content",
+        "content": "仿真环境基于远程状态估计系统：\n- 规模覆盖：从 10 设备 5 信道扩展至 40 设备 20 信道（超大规模）。\n- 信道模型：i.i.d. 块衰落信道，量化为 5 级状态，丢包率范围 0.01 至 0.2。\n- 神经网络：Actor 和 Critic 均为 3 层隐藏层的全连接网络。\n- 训练参数：10,000 训练回合，每回合 128 步；\\( \\gamma=0.99 \\)，学习率 Critic=0.001, Actor=0.0001。\n- 硬件支持：NVIDIA RTX 3060Ti GPU。评估指标侧重于平均总 MSE 成本和收敛速度。",
+        "tables": [
+          {
+            "table_id": "Doc Table 1",
+            "extract": "<table><tr><th>Hyperparameters</th><th>Value</th></tr><tr><td>Discount factor, γ</td><td>0.99</td></tr><tr><td>Clipping parameter, ε</td><td>0.2</td></tr><tr><td>Unified loss weight, β1, β2</td><td>0.9</td></tr><tr><td>Replay buffer, R</td><td>200</td></tr><tr><td>Pre-training episodes</td><td>10 × N</td></tr></table>",
+            "focus": "超参数配置"
+          }
+        ],
+        "figures": []
+      },
+      {
+        "id": "slide_10",
+        "title": "性能对比：SUDO-DRL 的卓越表现",
+        "type": "content",
+        "content": "实验结果显示，SUDO-DRL 在所有规模下均表现优异：\n1. 小规模场景 (10, 5)：SUDO-DRL 成本为 85.52，接近专门优化的 SE-DDPG（77.14），远优于 PPO（119.63）。\n2. 大规模场景 (30, 15) 及以上：所有离策算法（DDPG 变体）均宣告失败（无法收敛）。SUDO-DRL 不仅成功收敛，且性能比 PPO 提升了 30%-40%。\n3. 鲁棒性：在不同参数设置下（Para. 1-16），SUDO-DRL 始终保持最低的 MSE 成本，证明了其在复杂、动态无线环境下的稳健性。",
+        "tables": [
+          {
+            "table_id": "Doc Table 2",
+            "extract": "<table><tr><th>Scale (N, M)</th><th>PPO</th><th>SUDO-DRL</th><th>DDPG Variants</th></tr><tr><td>(10, 5)</td><td>119.63</td><td>85.52</td><td>77.14-89.26</td></tr><tr><td>(20, 10)</td><td>569.96</td><td>370.63</td><td>357.14 (Partial Fail)</td></tr><tr><td>(30, 15)</td><td>900.71</td><td>518.03</td><td>Failed (—)</td></tr><tr><td>(40, 20)</td><td>1291.54</td><td>994.80</td><td>Failed (—)</td></tr></table>",
+            "focus": "跨规模性能比较"
+          }
+        ],
+        "figures": []
+      },
+      {
+        "id": "slide_11",
+        "title": "消融研究与收敛效率分析",
+        "type": "content",
+        "content": "消融实验验证了各组件的有效性：\n1. 结构引导的作用：SUDO-DRL 在 200 回合内即可达到 100 分的凸性评分（CC Score），而 PPO 始终徘徊在 80 分以下，说明结构引导能强制模型学习正确的物理规律。\n2. 预训练的价值：全功能版本比无预训练版本收敛速度快 40%。预训练使得初始 MSE 成本从 800+ 降至 700 以下。\n3. 可扩展性突破：SUDO-DRL 是首个能在 40 设备 20 信道规模下保持高性能且稳定收敛的 DRL 调度算法，填补了大规模目标导向通信的技术空白。",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "slide_12",
+        "title": "结论与贡献总结",
+        "type": "ending",
+        "content": "本研究通过 SUDO-DRL 框架为面向目标的通信调度提供了新方案：\n1. 理论突破：首次证明了 AoI 调度中价值函数的渐近凸性，并利用单调性构建了约束学习框架。\n2. 算法创新：提出统一双策（Dual On-off policy）架构，兼顾了 PPO 的稳定性和 SAC 的效率。\n3. 性能飞跃：相比 PPO，系统性能提升 25%-45%，收敛速度提升 40%。\n4. 大规模适用性：成功解决了 40 台设备场景下的维度灾难，实现了理论最优性与实际计算可行性的平衡。\n\n未来研究可进一步探索该框架在多跳网络或异构业务流中的应用。",
+        "tables": [],
+        "figures": []
+      }
+    ],
+    "metadata": {
+      "density": null,
+      "page_range": [
+        12,
+        15
+      ]
+    }
+  },
+  "origin": {
+    "tables": [
+      {
+        "id": "Doc Table 1",
+        "caption": "",
+        "html": "<table><tr><th>Hyperparameters of SUDO-DRL and benchmarks</th><th>Value</th></tr><tr><td>Critic NN learning rate</td><td>0.001</td></tr><tr><td>Actor NN learning rate</td><td>0.0001</td></tr><tr><td>Decay rate of learning rate</td><td>0.001</td></tr><tr><td>Discount factor, <b>γ</b></td><td>0.99</td></tr><tr><td>GAE parameter, <b>λ</b></td><td>0.99</td></tr><tr><td>Clipping parameter, <b>ε</b></td><td>0.2</td></tr><tr><td>Policy entropy loss weight, <b>ω</b></td><td>0.01</td></tr><tr><td>Decay rate of sampling priority, <b>ρ</b></td><td>0.95</td></tr><tr><td>Unified on-off policy loss function hyperparameter, <b>β</b><sub>1</sub>, <b>β</b><sub>2</sub></td><td>0.9</td></tr><tr><td>On-policy and off-policy batch size, <b>B</b><sub>1</sub>, <b>B</b><sub>2</sub></td><td>128</td></tr><tr><td>Number of sampled states for score scheme, <b>K</b></td><td>50</td></tr><tr><td>Number of tested AoI and channel state, <b>Xi</b></td><td>4</td></tr><tr><td>Number of past trajectories for average score computing, <b>bar</b></td><td>50</td></tr><tr><td>Time horizon of each episode, <b>T</b></td><td>128</td></tr><tr><td>Size of replay buffer, <b>R</b></td><td>200</td></tr><tr><td>Number of episodes for pre-training, <b>I</b><sub>1</sub></td><td>10 × <b>N</b></td></tr><tr><td>Total number of episodes for training, <b>I</b></td><td>10000</td></tr><tr><td>Optimizer during training</td><td>Adam</td></tr></table>"
+      },
+      {
+        "id": "Doc Table 2",
+        "caption": "",
+        "html": "<table><tr><th>System Scale (N, M)</th><th>Para.</th><th>DDPG</th><th>SE-DDPG [21]</th><th>MRI-DDPG [22]</th><th>PPO</th><th>SUDO-DRL</th></tr><tr><td>(10, 5)</td><td>1</td><td>89.26</td><td>77.14</td><td>84.00</td><td>119.63</td><td><b>85.52</b></td></tr><tr><td></td><td>2</td><td>98.87</td><td>87.30</td><td>90.28</td><td>123.01</td><td><b>95.82</b></td></tr><tr><td></td><td>3</td><td>—</td><td>106.60</td><td>119.55</td><td>195.37</td><td><b>121.31</b></td></tr><tr><td></td><td>4</td><td>83.12</td><td>78.21</td><td>80.88</td><td>120.93</td><td><b>80.68</b></td></tr><tr><td>(20, 10)</td><td>5</td><td>—</td><td>357.14</td><td>369.14</td><td>569.96</td><td><b>370.63</b></td></tr><tr><td></td><td>6</td><td>—</td><td>—</td><td>445.87</td><td>584.37</td><td><b>426.29</b></td></tr><tr><td></td><td>7</td><td>—</td><td>407.20</td><td>441.73</td><td>731.94</td><td><b>417.90</b></td></tr><tr><td></td><td>8</td><td>—</td><td>290.72</td><td>307.94</td><td>376.16</td><td><b>308.91</b></td></tr><tr><td>(30, 15)</td><td>9</td><td>—</td><td>—</td><td>—</td><td>805.45</td><td><b>519.78</b></td></tr><tr><td></td><td>10</td><td>—</td><td>—</td><td>—</td><td>739.97</td><td><b>575.34</b></td></tr><tr><td></td><td>11</td><td>—</td><td>—</td><td>—</td><td>900.71</td><td><b>518.03</b></td></tr><tr><td></td><td>12</td><td>—</td><td>—</td><td>—</td><td>901.42</td><td><b>551.97</b></td></tr><tr><td>(40, 20)</td><td>13</td><td>—</td><td>—</td><td>—</td><td>1057.05</td><td><b>719.45</b></td></tr><tr><td></td><td>14</td><td>—</td><td>—</td><td>—</td><td>971.35</td><td><b>689.81</b></td></tr><tr><td></td><td>15</td><td>—</td><td>—</td><td>—</td><td>1291.54</td><td><b>994.80</b></td></tr><tr><td></td><td>16</td><td>—</td><td>—</td><td>—</td><td>1012.20</td><td><b>771.91</b></td></tr></table>"
+      }
+    ],
+    "figures": [],
+    "base_path": "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\data\\temp\\1b9a609e-fce7-49de-a3fc-cb828a2de68b"
+  },
+  "content_type": "paper"
+}

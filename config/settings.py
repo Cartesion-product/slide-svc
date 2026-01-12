@@ -68,7 +68,6 @@ class Settings:
     @property
     def knowledge_db_name(self) -> str:
         """知识库数据库名 (Source Content)"""
-        # 默认为 SV_KNOWLEDGE_DB
         return os.getenv('KNOWLEDGE_DB_NAME', 'SV_KNOWLEDGE_DB')
 
     @property
@@ -86,16 +85,62 @@ class Settings:
         """系统论文原始内容表名 (Source Content)"""
         return os.getenv('SYSTEM_PAPER_CONTENT_COLLECTION', 'system_paper_original_content')
 
-    # ============ Celery 配置 ============
+    # ============ Celery / Redis 配置 ============
+
+    def _get_redis_url_from_kb_env(self, db_index: int = 0) -> Optional[str]:
+        """从 KB_REDIS_DB 环境变量解析并构建 Redis URL
+
+        环境变量格式示例: 10.0.62.230:26379,password=SophyVerse-v5
+        目标 URL 格式: redis://:password@host:port/db
+        """
+        kb_redis_conf = os.getenv('KB_REDIS_DB')
+        if not kb_redis_conf:
+            return None
+
+        try:
+            # 1. 按逗号拆分
+            parts = kb_redis_conf.split(',')
+            host_port = parts[0].strip()
+
+            password = ""
+            # 2. 查找 password 部分
+            if len(parts) > 1:
+                for part in parts[1:]:
+                    part = part.strip()
+                    if part.startswith("password="):
+                        password = part.split("=", 1)[1]
+                        break
+
+            # 3. 构建 URL
+            # 如果有密码，URL格式为 redis://:password@host:port/db
+            # 如果无密码，URL格式为 redis://host:port/db
+            auth_str = f":{password}@" if password else ""
+
+            return f"redis://{auth_str}{host_port}/{db_index}"
+
+        except Exception as e:
+            # 解析失败时记录错误（或者仅静默失败回退到默认值）
+            print(f"Warning: 解析 KB_REDIS_DB 环境变量失败: {e}")
+            return None
 
     @property
     def celery_broker_url(self) -> str:
         """Celery Broker URL (Redis)"""
+        # 优先尝试从 KB_REDIS_DB 解析 (默认使用 db 0)
+        kb_url = self._get_redis_url_from_kb_env(0)
+        if kb_url:
+            return kb_url
+
         return os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
 
     @property
     def celery_result_backend(self) -> str:
-        """Celery Result Backend URL"""
+        """Celery Result Backend (Redis)"""
+        # 优先尝试从 KB_REDIS_DB 解析 (默认使用 db 1)
+        kb_url = self._get_redis_url_from_kb_env(1)
+        if kb_url:
+            return kb_url
+
         return os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/1')
 
     # ============ MinIO 配置 ============

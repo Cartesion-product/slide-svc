@@ -13,7 +13,7 @@
     "log_backup_count": 3
   },
   "env": {
-    "KB_FRAMEWORK_DB_1": "mongodb://root:Digital-twin-v5@10.0.62.214:27017/admin",
+    "KB_FRAMEWORK_DB_1": "mongodb://root:SophyVerse-v5@10.0.62.230:27017/admin",
     "KB_FRAMEWORK_DB": "mongodb://localhost:27017/",
 
     "KB_API_SERVICE_GLOBAL_TOKEN": "1effa9c3b68447c7b8dcac84ccaebd32",
@@ -25,6 +25,8 @@
     "KB_MINIO_ENDPOINT":"10.0.62.206:59003",
     "KB_MINIO_ACCESSKEY": "admin",
     "KB_MINIO_SECRETKEY": "SophyVerse-v5",
+    "KB_MINIO_SECURE": false,
+
     "SYSTEM_SLIDES_MINIO_BUCKET": "kb-slide-system",
     "USER_SLIDES_MINIO_BUCKET": "kb-slide-user",
     "SYSTEM_POSTER_MINIO_BUCKET": "kb-poster-system",
