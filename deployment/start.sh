@@ -1,0 +1,1 @@
+docker run -d --name slide-svc -p 18500:5003 -v /home/slide-svc/slide-svc:/app -v /etc/localtime:/etc/localtime hub.registry.cloud:11443/sv/slide-svc:1.0.0

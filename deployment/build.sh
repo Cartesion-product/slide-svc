@@ -1,0 +1,1 @@
+docker build -t hub.registry.cloud:11443/sv/slide-svc:1.0.0 -f deployment/Dockerfile .
