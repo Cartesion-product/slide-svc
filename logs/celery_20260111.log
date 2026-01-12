@@ -1,0 +1,737 @@
+[WARNING] 2026-01-11 12:01:52.504 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:01:54.575 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 12:01:54.576 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:01:56.600 mingle: searching for neighbors
+[INFO] 2026-01-11 12:02:03.743 mingle: all alone
+[INFO] 2026-01-11 12:02:13.937 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 12:02:13.944 Task celery_app.tasks.generate_slides_task[14c105ee-1e08-4a22-9f5b-247ec628cf29] received
+[INFO] 2026-01-11 12:02:16.027 开始执行任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 12:02:16.027 开始执行任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 12:02:18.726 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 12:02:18.812 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始参数校验...
+[INFO] 2026-01-11 12:02:18.812 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始参数校验...
+[INFO] 2026-01-11 12:02:18.830 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 任务状态已更新为 running
+[INFO] 2026-01-11 12:02:18.830 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 任务状态已更新为 running
+[INFO] 2026-01-11 12:02:18.839 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始下载文件...
+[INFO] 2026-01-11 12:02:18.839 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始下载文件...
+[INFO] 2026-01-11 12:02:18.840 [14c105ee-1e08-4a22-9f5b-247ec628cf29] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:02:18.840 [14c105ee-1e08-4a22-9f5b-247ec628cf29] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:02:18.841 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 12:02:18.841 MinIO客户端初始化成功
+[INFO] 2026-01-11 12:02:19.084 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 12:02:19.085 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 12:02:19.085 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 12:02:19.088 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始调用生成管道...
+[INFO] 2026-01-11 12:02:19.088 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始调用生成管道...
+[INFO] 2026-01-11 12:02:19.091 Starting pipeline from stage: generate
+[INFO] 2026-01-11 12:02:19.091 Session ID: b51cd8dd-264d-4a12-984e-20689d3e737e
+[INFO] 2026-01-11 12:02:19.092 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 12:02:19.092 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\slides_academic_long
+[INFO] 2026-01-11 12:02:19.097 
+[INFO] 2026-01-11 12:02:19.098 Starting from stage: generate
+[INFO] 2026-01-11 12:02:19.098 
+[INFO] 2026-01-11 12:02:19.099 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:02:19.099 STAGE: GENERATE
+[INFO] 2026-01-11 12:02:19.099 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:02:21.381 Generating images...
+[INFO] 2026-01-11 12:02:23.057 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:02:23.058   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 12:02:23.058   Prompt length: 6229 chars
+[INFO] 2026-01-11 12:02:36.940 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 12:02:37.541 Image generation successful (Doubao, URL, 925678 bytes)
+[INFO] 2026-01-11 12:02:37.545   [1/12] Saved: slide_01.png
+[INFO] 2026-01-11 12:02:37.546 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:02:37.547   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 12:02:37.547   Prompt length: 6377 chars
+[WARNING] 2026-01-11 12:13:54.984 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:13:57.030 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 12:13:57.033 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:13:59.067 mingle: searching for neighbors
+[INFO] 2026-01-11 12:14:06.232 mingle: all alone
+[INFO] 2026-01-11 12:14:16.497 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 12:15:55.717 Task celery_app.tasks.generate_slides_task[43da273f-942f-49b7-850f-e946b02908b7] received
+[INFO] 2026-01-11 12:15:57.823 开始执行任务: 43da273f-942f-49b7-850f-e946b02908b7, update_system=False
+[INFO] 2026-01-11 12:15:57.823 开始执行任务: 43da273f-942f-49b7-850f-e946b02908b7, update_system=False
+[INFO] 2026-01-11 12:16:00.451 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 12:16:00.512 [43da273f-942f-49b7-850f-e946b02908b7] 开始参数校验...
+[INFO] 2026-01-11 12:16:00.512 [43da273f-942f-49b7-850f-e946b02908b7] 开始参数校验...
+[INFO] 2026-01-11 12:16:00.517 [43da273f-942f-49b7-850f-e946b02908b7] 任务状态已更新为 running
+[INFO] 2026-01-11 12:16:00.517 [43da273f-942f-49b7-850f-e946b02908b7] 任务状态已更新为 running
+[INFO] 2026-01-11 12:16:00.524 [43da273f-942f-49b7-850f-e946b02908b7] 开始下载文件...
+[INFO] 2026-01-11 12:16:00.524 [43da273f-942f-49b7-850f-e946b02908b7] 开始下载文件...
+[INFO] 2026-01-11 12:16:00.525 [43da273f-942f-49b7-850f-e946b02908b7] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:16:00.525 [43da273f-942f-49b7-850f-e946b02908b7] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:16:00.526 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 12:16:00.526 MinIO客户端初始化成功
+[INFO] 2026-01-11 12:16:00.771 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\43da273f-942f-49b7-850f-e946b02908b7\2501.11921.md
+[INFO] 2026-01-11 12:16:00.772 [43da273f-942f-49b7-850f-e946b02908b7] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\43da273f-942f-49b7-850f-e946b02908b7\2501.11921.md
+[INFO] 2026-01-11 12:16:00.772 [43da273f-942f-49b7-850f-e946b02908b7] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\43da273f-942f-49b7-850f-e946b02908b7\2501.11921.md
+[INFO] 2026-01-11 12:16:00.775 [43da273f-942f-49b7-850f-e946b02908b7] 开始调用生成管道...
+[INFO] 2026-01-11 12:16:00.775 [43da273f-942f-49b7-850f-e946b02908b7] 开始调用生成管道...
+[INFO] 2026-01-11 12:16:00.777 Starting pipeline from stage: generate
+[INFO] 2026-01-11 12:16:00.777 Session ID: 0541ae49-52bf-4ed7-96d3-a7137d0cf8cc
+[INFO] 2026-01-11 12:16:00.777 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 12:16:00.779 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 12:16:00.784 
+[INFO] 2026-01-11 12:16:00.784 Starting from stage: generate
+[INFO] 2026-01-11 12:16:00.786 
+[INFO] 2026-01-11 12:16:00.786 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:16:00.786 STAGE: GENERATE
+[INFO] 2026-01-11 12:16:00.787 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:16:02.819 Generating images...
+[INFO] 2026-01-11 12:16:04.487 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:16:04.487   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 12:16:04.487   Prompt length: 5365 chars
+[INFO] 2026-01-11 12:16:41.739 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 12:16:42.367 Image generation successful (Doubao, URL, 1557778 bytes)
+[INFO] 2026-01-11 12:16:42.369   [1/1] Saved: poster.png
+[INFO] 2026-01-11 12:16:42.370   Generated 1 images
+[INFO] 2026-01-11 12:16:42.370 
+[INFO] 2026-01-11 12:16:42.370 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_121602
+[INFO] 2026-01-11 12:16:42.371 
+[INFO] 2026-01-11 12:16:42.372 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:16:42.372 SUMMARY
+[INFO] 2026-01-11 12:16:42.372 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:16:42.372   [✓] rag: completed
+[INFO] 2026-01-11 12:16:42.372   [✓] summary: completed
+[INFO] 2026-01-11 12:16:42.374   [✓] plan: completed
+[INFO] 2026-01-11 12:16:42.374   [✓] generate: completed
+[INFO] 2026-01-11 12:16:42.375 [43da273f-942f-49b7-850f-e946b02908b7] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:16:42.375 [43da273f-942f-49b7-850f-e946b02908b7] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:16:42.376 [43da273f-942f-49b7-850f-e946b02908b7] 开始上传文件...
+[INFO] 2026-01-11 12:16:42.376 [43da273f-942f-49b7-850f-e946b02908b7] 开始上传文件...
+[INFO] 2026-01-11 12:16:42.706 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/43da273f-942f-49b7-850f-e946b02908b7/poster.png
+[INFO] 2026-01-11 12:16:42.708 [43da273f-942f-49b7-850f-e946b02908b7] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/43da273f-942f-49b7-850f-e946b02908b7/poster.png
+[INFO] 2026-01-11 12:16:42.708 [43da273f-942f-49b7-850f-e946b02908b7] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/43da273f-942f-49b7-850f-e946b02908b7/poster.png
+[INFO] 2026-01-11 12:16:42.711 [43da273f-942f-49b7-850f-e946b02908b7] 开始更新用户数据...
+[INFO] 2026-01-11 12:16:42.711 [43da273f-942f-49b7-850f-e946b02908b7] 开始更新用户数据...
+[INFO] 2026-01-11 12:16:42.714 只更新当前任务: 43da273f-942f-49b7-850f-e946b02908b7, update_system=False
+[INFO] 2026-01-11 12:16:42.714 只更新当前任务: 43da273f-942f-49b7-850f-e946b02908b7, update_system=False
+[INFO] 2026-01-11 12:16:42.715 [43da273f-942f-49b7-850f-e946b02908b7] 用户数据更新完成
+[INFO] 2026-01-11 12:16:42.715 [43da273f-942f-49b7-850f-e946b02908b7] 用户数据更新完成
+[INFO] 2026-01-11 12:16:42.719 [43da273f-942f-49b7-850f-e946b02908b7] 开始更新系统数据...
+[INFO] 2026-01-11 12:16:42.719 [43da273f-942f-49b7-850f-e946b02908b7] 开始更新系统数据...
+[INFO] 2026-01-11 12:16:42.720 [43da273f-942f-49b7-850f-e946b02908b7] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:16:42.720 [43da273f-942f-49b7-850f-e946b02908b7] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:16:42.722 任务执行完成: 43da273f-942f-49b7-850f-e946b02908b7, status=success
+[INFO] 2026-01-11 12:16:42.722 任务执行完成: 43da273f-942f-49b7-850f-e946b02908b7, status=success
+[INFO] 2026-01-11 12:16:42.723 任务成功: 43da273f-942f-49b7-850f-e946b02908b7
+[INFO] 2026-01-11 12:16:42.723 任务成功: 43da273f-942f-49b7-850f-e946b02908b7
+[INFO] 2026-01-11 12:16:44.766 运行中任务数减少: 0
+[INFO] 2026-01-11 12:16:44.769 已清理临时文件: 43da273f-942f-49b7-850f-e946b02908b7
+[INFO] 2026-01-11 12:16:44.769 已清理临时文件: 43da273f-942f-49b7-850f-e946b02908b7
+[INFO] 2026-01-11 12:16:44.773 Task celery_app.tasks.generate_slides_task[43da273f-942f-49b7-850f-e946b02908b7] succeeded in 49.04699999978766s: {'result_id': '43da273f-942f-49b7-850f-e946b02908b7', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/43da273f-942f-49b7-850f-e946b02908b7/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-11 12:38:49.984 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:38:52.041 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 12:38:52.042 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:38:56.139 mingle: searching for neighbors
+[INFO] 2026-01-11 12:39:03.303 mingle: all alone
+[INFO] 2026-01-11 12:39:11.486 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 12:39:35.502 Task celery_app.tasks.generate_slides_task[7983c817-c014-4cf6-86da-e1f364f9b003] received
+[INFO] 2026-01-11 12:39:37.596 开始执行任务: 7983c817-c014-4cf6-86da-e1f364f9b003, update_system=False
+[INFO] 2026-01-11 12:39:37.596 开始执行任务: 7983c817-c014-4cf6-86da-e1f364f9b003, update_system=False
+[INFO] 2026-01-11 12:39:40.149 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 12:39:40.215 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始参数校验...
+[INFO] 2026-01-11 12:39:40.215 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始参数校验...
+[INFO] 2026-01-11 12:39:40.220 [7983c817-c014-4cf6-86da-e1f364f9b003] 任务状态已更新为 running
+[INFO] 2026-01-11 12:39:40.220 [7983c817-c014-4cf6-86da-e1f364f9b003] 任务状态已更新为 running
+[INFO] 2026-01-11 12:39:40.230 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始下载文件...
+[INFO] 2026-01-11 12:39:40.230 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始下载文件...
+[INFO] 2026-01-11 12:39:40.232 [7983c817-c014-4cf6-86da-e1f364f9b003] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:39:40.232 [7983c817-c014-4cf6-86da-e1f364f9b003] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:39:40.233 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 12:39:40.233 MinIO客户端初始化成功
+[INFO] 2026-01-11 12:39:40.495 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7983c817-c014-4cf6-86da-e1f364f9b003\2501.11921.md
+[INFO] 2026-01-11 12:39:40.495 [7983c817-c014-4cf6-86da-e1f364f9b003] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7983c817-c014-4cf6-86da-e1f364f9b003\2501.11921.md
+[INFO] 2026-01-11 12:39:40.495 [7983c817-c014-4cf6-86da-e1f364f9b003] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7983c817-c014-4cf6-86da-e1f364f9b003\2501.11921.md
+[INFO] 2026-01-11 12:39:40.500 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始调用生成管道...
+[INFO] 2026-01-11 12:39:40.500 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始调用生成管道...
+[INFO] 2026-01-11 12:39:40.503 Starting pipeline from stage: generate
+[INFO] 2026-01-11 12:39:40.503 Session ID: 277ed48f-96df-46ed-9709-d1eb62c1dbb1
+[INFO] 2026-01-11 12:39:40.504 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 12:39:40.504 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 12:39:40.510 
+[INFO] 2026-01-11 12:39:40.510 Starting from stage: generate
+[INFO] 2026-01-11 12:39:40.510 
+[INFO] 2026-01-11 12:39:40.511 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:39:40.511 STAGE: GENERATE
+[INFO] 2026-01-11 12:39:40.511 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:39:42.666 Generating images...
+[INFO] 2026-01-11 12:39:42.666 Calling DMXAPI image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:39:42.668   Model: nano-banana-2, Aspect: 16:9, Size: 2K
+[INFO] 2026-01-11 12:39:42.668   Prompt length: 5334 chars
+[INFO] 2026-01-11 12:40:54.722 Image generation successful (DMXAPI, base64, 6473012 bytes)
+[INFO] 2026-01-11 12:40:54.729   [1/1] Saved: poster.png
+[INFO] 2026-01-11 12:40:54.730   Generated 1 images
+[INFO] 2026-01-11 12:40:54.730 
+[INFO] 2026-01-11 12:40:54.730 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_123942
+[INFO] 2026-01-11 12:40:54.733 
+[INFO] 2026-01-11 12:40:54.734 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:40:54.734 SUMMARY
+[INFO] 2026-01-11 12:40:54.734 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:40:54.735   [✓] rag: completed
+[INFO] 2026-01-11 12:40:54.735   [✓] summary: completed
+[INFO] 2026-01-11 12:40:54.735   [✓] plan: completed
+[INFO] 2026-01-11 12:40:54.735   [✓] generate: completed
+[INFO] 2026-01-11 12:40:54.737 [7983c817-c014-4cf6-86da-e1f364f9b003] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:40:54.737 [7983c817-c014-4cf6-86da-e1f364f9b003] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:40:54.740 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始上传文件...
+[INFO] 2026-01-11 12:40:54.740 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始上传文件...
+[INFO] 2026-01-11 12:40:56.671 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7983c817-c014-4cf6-86da-e1f364f9b003/poster.png
+[INFO] 2026-01-11 12:40:56.671 [7983c817-c014-4cf6-86da-e1f364f9b003] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7983c817-c014-4cf6-86da-e1f364f9b003/poster.png
+[INFO] 2026-01-11 12:40:56.671 [7983c817-c014-4cf6-86da-e1f364f9b003] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7983c817-c014-4cf6-86da-e1f364f9b003/poster.png
+[INFO] 2026-01-11 12:40:56.674 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始更新用户数据...
+[INFO] 2026-01-11 12:40:56.674 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始更新用户数据...
+[INFO] 2026-01-11 12:40:56.679 只更新当前任务: 7983c817-c014-4cf6-86da-e1f364f9b003, update_system=False
+[INFO] 2026-01-11 12:40:56.679 只更新当前任务: 7983c817-c014-4cf6-86da-e1f364f9b003, update_system=False
+[INFO] 2026-01-11 12:40:56.680 [7983c817-c014-4cf6-86da-e1f364f9b003] 用户数据更新完成
+[INFO] 2026-01-11 12:40:56.680 [7983c817-c014-4cf6-86da-e1f364f9b003] 用户数据更新完成
+[INFO] 2026-01-11 12:40:56.684 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始更新系统数据...
+[INFO] 2026-01-11 12:40:56.684 [7983c817-c014-4cf6-86da-e1f364f9b003] 开始更新系统数据...
+[INFO] 2026-01-11 12:40:56.684 [7983c817-c014-4cf6-86da-e1f364f9b003] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:40:56.684 [7983c817-c014-4cf6-86da-e1f364f9b003] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:40:56.689 任务执行完成: 7983c817-c014-4cf6-86da-e1f364f9b003, status=success
+[INFO] 2026-01-11 12:40:56.689 任务执行完成: 7983c817-c014-4cf6-86da-e1f364f9b003, status=success
+[INFO] 2026-01-11 12:40:56.690 任务成功: 7983c817-c014-4cf6-86da-e1f364f9b003
+[INFO] 2026-01-11 12:40:56.690 任务成功: 7983c817-c014-4cf6-86da-e1f364f9b003
+[INFO] 2026-01-11 12:40:58.725 运行中任务数减少: 0
+[INFO] 2026-01-11 12:40:58.729 已清理临时文件: 7983c817-c014-4cf6-86da-e1f364f9b003
+[INFO] 2026-01-11 12:40:58.729 已清理临时文件: 7983c817-c014-4cf6-86da-e1f364f9b003
+[INFO] 2026-01-11 12:40:58.732 Task celery_app.tasks.generate_slides_task[7983c817-c014-4cf6-86da-e1f364f9b003] succeeded in 83.2339999997057s: {'result_id': '7983c817-c014-4cf6-86da-e1f364f9b003', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7983c817-c014-4cf6-86da-e1f364f9b003/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-11 12:50:25.867 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:50:27.925 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 12:50:27.930 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:50:29.969 mingle: searching for neighbors
+[INFO] 2026-01-11 12:50:37.125 mingle: all alone
+[INFO] 2026-01-11 12:50:47.361 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 12:51:07.544 Task celery_app.tasks.generate_slides_task[341cb248-ac45-43c3-bfe3-af704608ad88] received
+[INFO] 2026-01-11 12:51:09.652 开始执行任务: 341cb248-ac45-43c3-bfe3-af704608ad88, update_system=False
+[INFO] 2026-01-11 12:51:09.652 开始执行任务: 341cb248-ac45-43c3-bfe3-af704608ad88, update_system=False
+[INFO] 2026-01-11 12:51:12.144 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 12:51:12.201 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始参数校验...
+[INFO] 2026-01-11 12:51:12.201 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始参数校验...
+[INFO] 2026-01-11 12:51:12.204 [341cb248-ac45-43c3-bfe3-af704608ad88] 任务状态已更新为 running
+[INFO] 2026-01-11 12:51:12.204 [341cb248-ac45-43c3-bfe3-af704608ad88] 任务状态已更新为 running
+[INFO] 2026-01-11 12:51:12.216 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始下载文件...
+[INFO] 2026-01-11 12:51:12.216 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始下载文件...
+[INFO] 2026-01-11 12:51:12.217 [341cb248-ac45-43c3-bfe3-af704608ad88] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:51:12.217 [341cb248-ac45-43c3-bfe3-af704608ad88] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:51:12.219 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 12:51:12.219 MinIO客户端初始化成功
+[INFO] 2026-01-11 12:51:12.467 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\341cb248-ac45-43c3-bfe3-af704608ad88\2501.11921.md
+[INFO] 2026-01-11 12:51:12.468 [341cb248-ac45-43c3-bfe3-af704608ad88] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\341cb248-ac45-43c3-bfe3-af704608ad88\2501.11921.md
+[INFO] 2026-01-11 12:51:12.468 [341cb248-ac45-43c3-bfe3-af704608ad88] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\341cb248-ac45-43c3-bfe3-af704608ad88\2501.11921.md
+[INFO] 2026-01-11 12:51:12.471 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始调用生成管道...
+[INFO] 2026-01-11 12:51:12.471 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始调用生成管道...
+[INFO] 2026-01-11 12:51:12.474 Starting pipeline from stage: generate
+[INFO] 2026-01-11 12:51:12.474 Session ID: 16b4fde1-5f7e-4785-a797-66cf366ffd43
+[INFO] 2026-01-11 12:51:12.475 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 12:51:12.475 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 12:51:12.480 
+[INFO] 2026-01-11 12:51:12.480 Starting from stage: generate
+[INFO] 2026-01-11 12:51:12.481 
+[INFO] 2026-01-11 12:51:12.481 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:51:12.481 STAGE: GENERATE
+[INFO] 2026-01-11 12:51:12.482 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:51:14.492 Generating images...
+[INFO] 2026-01-11 12:51:14.493 Calling DMXAPI image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:51:14.494   Model: nano-banana-2, Aspect: 16:9, Size: 2K
+[INFO] 2026-01-11 12:51:14.494   Prompt length: 5425 chars
+[INFO] 2026-01-11 12:52:23.072 Image generation successful (DMXAPI, base64, 6573617 bytes)
+[INFO] 2026-01-11 12:52:23.079   [1/1] Saved: poster.png
+[INFO] 2026-01-11 12:52:23.080   Generated 1 images
+[INFO] 2026-01-11 12:52:23.080 
+[INFO] 2026-01-11 12:52:23.080 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_125114
+[INFO] 2026-01-11 12:52:23.082 
+[INFO] 2026-01-11 12:52:23.082 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:52:23.083 SUMMARY
+[INFO] 2026-01-11 12:52:23.083 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:52:23.083   [✓] rag: completed
+[INFO] 2026-01-11 12:52:23.084   [✓] summary: completed
+[INFO] 2026-01-11 12:52:23.084   [✓] plan: completed
+[INFO] 2026-01-11 12:52:23.084   [✓] generate: completed
+[INFO] 2026-01-11 12:52:23.086 [341cb248-ac45-43c3-bfe3-af704608ad88] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:52:23.086 [341cb248-ac45-43c3-bfe3-af704608ad88] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 12:52:23.090 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始上传文件...
+[INFO] 2026-01-11 12:52:23.090 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始上传文件...
+[INFO] 2026-01-11 12:52:24.472 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/341cb248-ac45-43c3-bfe3-af704608ad88/poster.png
+[INFO] 2026-01-11 12:52:24.472 [341cb248-ac45-43c3-bfe3-af704608ad88] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/341cb248-ac45-43c3-bfe3-af704608ad88/poster.png
+[INFO] 2026-01-11 12:52:24.472 [341cb248-ac45-43c3-bfe3-af704608ad88] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/341cb248-ac45-43c3-bfe3-af704608ad88/poster.png
+[INFO] 2026-01-11 12:52:24.475 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始更新用户数据...
+[INFO] 2026-01-11 12:52:24.475 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始更新用户数据...
+[INFO] 2026-01-11 12:52:24.478 只更新当前任务: 341cb248-ac45-43c3-bfe3-af704608ad88, update_system=False
+[INFO] 2026-01-11 12:52:24.478 只更新当前任务: 341cb248-ac45-43c3-bfe3-af704608ad88, update_system=False
+[INFO] 2026-01-11 12:52:24.479 [341cb248-ac45-43c3-bfe3-af704608ad88] 用户数据更新完成
+[INFO] 2026-01-11 12:52:24.479 [341cb248-ac45-43c3-bfe3-af704608ad88] 用户数据更新完成
+[INFO] 2026-01-11 12:52:24.481 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始更新系统数据...
+[INFO] 2026-01-11 12:52:24.481 [341cb248-ac45-43c3-bfe3-af704608ad88] 开始更新系统数据...
+[INFO] 2026-01-11 12:52:24.481 [341cb248-ac45-43c3-bfe3-af704608ad88] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:52:24.481 [341cb248-ac45-43c3-bfe3-af704608ad88] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 12:52:24.484 任务执行完成: 341cb248-ac45-43c3-bfe3-af704608ad88, status=success
+[INFO] 2026-01-11 12:52:24.484 任务执行完成: 341cb248-ac45-43c3-bfe3-af704608ad88, status=success
+[INFO] 2026-01-11 12:52:24.485 任务成功: 341cb248-ac45-43c3-bfe3-af704608ad88
+[INFO] 2026-01-11 12:52:24.485 任务成功: 341cb248-ac45-43c3-bfe3-af704608ad88
+[INFO] 2026-01-11 12:52:26.554 运行中任务数减少: 0
+[INFO] 2026-01-11 12:52:26.557 已清理临时文件: 341cb248-ac45-43c3-bfe3-af704608ad88
+[INFO] 2026-01-11 12:52:26.557 已清理临时文件: 341cb248-ac45-43c3-bfe3-af704608ad88
+[INFO] 2026-01-11 12:52:26.560 Task celery_app.tasks.generate_slides_task[341cb248-ac45-43c3-bfe3-af704608ad88] succeeded in 79.01500000013039s: {'result_id': '341cb248-ac45-43c3-bfe3-af704608ad88', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/341cb248-ac45-43c3-bfe3-af704608ad88/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-11 12:55:03.597 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:55:05.655 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 12:55:05.657 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 12:55:09.757 mingle: searching for neighbors
+[INFO] 2026-01-11 12:55:16.881 mingle: all alone
+[INFO] 2026-01-11 12:55:25.074 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 12:59:47.207 Task celery_app.tasks.generate_slides_task[1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] received
+[INFO] 2026-01-11 12:59:49.287 开始执行任务: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, update_system=False
+[INFO] 2026-01-11 12:59:49.287 开始执行任务: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, update_system=False
+[INFO] 2026-01-11 12:59:51.505 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 12:59:51.558 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始参数校验...
+[INFO] 2026-01-11 12:59:51.558 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始参数校验...
+[INFO] 2026-01-11 12:59:51.562 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 任务状态已更新为 running
+[INFO] 2026-01-11 12:59:51.562 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 任务状态已更新为 running
+[INFO] 2026-01-11 12:59:51.569 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始下载文件...
+[INFO] 2026-01-11 12:59:51.569 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始下载文件...
+[INFO] 2026-01-11 12:59:51.570 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:59:51.570 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 12:59:51.570 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 12:59:51.571 MinIO客户端初始化成功
+[INFO] 2026-01-11 12:59:51.838 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\1e2a8b47-df39-4b5f-947c-24bd1dc67cb6\2501.11921.md
+[INFO] 2026-01-11 12:59:51.838 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\1e2a8b47-df39-4b5f-947c-24bd1dc67cb6\2501.11921.md
+[INFO] 2026-01-11 12:59:51.838 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\1e2a8b47-df39-4b5f-947c-24bd1dc67cb6\2501.11921.md
+[INFO] 2026-01-11 12:59:51.840 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始调用生成管道...
+[INFO] 2026-01-11 12:59:51.840 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始调用生成管道...
+[INFO] 2026-01-11 12:59:51.843 Starting pipeline from stage: generate
+[INFO] 2026-01-11 12:59:51.843 Session ID: ffea5a27-c298-45a5-a51a-48af495fab7b
+[INFO] 2026-01-11 12:59:51.844 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 12:59:51.844 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 12:59:51.847 
+[INFO] 2026-01-11 12:59:51.848 Starting from stage: generate
+[INFO] 2026-01-11 12:59:51.848 
+[INFO] 2026-01-11 12:59:51.848 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:59:51.848 STAGE: GENERATE
+[INFO] 2026-01-11 12:59:51.849 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 12:59:53.586 Generating images...
+[INFO] 2026-01-11 12:59:53.587 Calling DMXAPI image generation (attempt 1/3)...
+[INFO] 2026-01-11 12:59:53.588   Model: nano-banana-2, Aspect: 16:9, Size: 2K
+[INFO] 2026-01-11 12:59:53.588   Prompt length: 5395 chars
+[INFO] 2026-01-11 13:02:35.869 Image generation successful (DMXAPI, base64, 6796016 bytes)
+[INFO] 2026-01-11 13:02:35.877   [1/1] Saved: poster.png
+[INFO] 2026-01-11 13:02:35.879   Generated 1 images
+[INFO] 2026-01-11 13:02:35.879 
+[INFO] 2026-01-11 13:02:35.880 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_125953
+[INFO] 2026-01-11 13:02:35.882 
+[INFO] 2026-01-11 13:02:35.883 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:02:35.883 SUMMARY
+[INFO] 2026-01-11 13:02:35.883 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:02:35.883   [✓] rag: completed
+[INFO] 2026-01-11 13:02:35.884   [✓] summary: completed
+[INFO] 2026-01-11 13:02:35.884   [✓] plan: completed
+[INFO] 2026-01-11 13:02:35.885   [✓] generate: completed
+[INFO] 2026-01-11 13:02:35.886 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 13:02:35.886 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 13:02:35.890 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始上传文件...
+[INFO] 2026-01-11 13:02:35.890 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始上传文件...
+[INFO] 2026-01-11 13:02:37.691 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/1e2a8b47-df39-4b5f-947c-24bd1dc67cb6/poster.png
+[INFO] 2026-01-11 13:02:37.691 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/1e2a8b47-df39-4b5f-947c-24bd1dc67cb6/poster.png
+[INFO] 2026-01-11 13:02:37.691 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/1e2a8b47-df39-4b5f-947c-24bd1dc67cb6/poster.png
+[INFO] 2026-01-11 13:02:37.694 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始更新用户数据...
+[INFO] 2026-01-11 13:02:37.694 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始更新用户数据...
+[INFO] 2026-01-11 13:02:37.697 只更新当前任务: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, update_system=False
+[INFO] 2026-01-11 13:02:37.697 只更新当前任务: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, update_system=False
+[INFO] 2026-01-11 13:02:37.697 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 用户数据更新完成
+[INFO] 2026-01-11 13:02:37.697 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 用户数据更新完成
+[INFO] 2026-01-11 13:02:37.701 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始更新系统数据...
+[INFO] 2026-01-11 13:02:37.701 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 开始更新系统数据...
+[INFO] 2026-01-11 13:02:37.701 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:02:37.701 [1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:02:37.706 任务执行完成: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, status=success
+[INFO] 2026-01-11 13:02:37.706 任务执行完成: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6, status=success
+[INFO] 2026-01-11 13:02:37.707 任务成功: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6
+[INFO] 2026-01-11 13:02:37.707 任务成功: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6
+[INFO] 2026-01-11 13:02:39.777 运行中任务数减少: 0
+[INFO] 2026-01-11 13:02:39.780 已清理临时文件: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6
+[INFO] 2026-01-11 13:02:39.780 已清理临时文件: 1e2a8b47-df39-4b5f-947c-24bd1dc67cb6
+[INFO] 2026-01-11 13:02:39.796 Task celery_app.tasks.generate_slides_task[1e2a8b47-df39-4b5f-947c-24bd1dc67cb6] succeeded in 172.59400000004098s: {'result_id': '1e2a8b47-df39-4b5f-947c-24bd1dc67cb6', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/1e2a8b47-df39-4b5f-947c-24bd1dc67cb6/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-11 13:19:03.889 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 13:19:05.946 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 13:19:05.948 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 13:19:07.975 mingle: searching for neighbors
+[INFO] 2026-01-11 13:19:15.144 mingle: all alone
+[INFO] 2026-01-11 13:19:25.354 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 13:19:25.359 Task celery_app.tasks.generate_slides_task[14c105ee-1e08-4a22-9f5b-247ec628cf29] received
+[INFO] 2026-01-11 13:19:27.448 开始执行任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 13:19:27.448 开始执行任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 13:19:29.592 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 13:19:29.644 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始参数校验...
+[INFO] 2026-01-11 13:19:29.644 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始参数校验...
+[INFO] 2026-01-11 13:19:29.649 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 任务状态已更新为 running
+[INFO] 2026-01-11 13:19:29.649 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 任务状态已更新为 running
+[INFO] 2026-01-11 13:19:29.656 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始下载文件...
+[INFO] 2026-01-11 13:19:29.656 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始下载文件...
+[INFO] 2026-01-11 13:19:29.657 [14c105ee-1e08-4a22-9f5b-247ec628cf29] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:19:29.657 [14c105ee-1e08-4a22-9f5b-247ec628cf29] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:19:29.657 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 13:19:29.658 MinIO客户端初始化成功
+[INFO] 2026-01-11 13:19:29.924 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 13:19:29.924 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 13:19:29.924 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\14c105ee-1e08-4a22-9f5b-247ec628cf29\2501.11921.md
+[INFO] 2026-01-11 13:19:29.929 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始调用生成管道...
+[INFO] 2026-01-11 13:19:29.929 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始调用生成管道...
+[INFO] 2026-01-11 13:19:29.932 Starting pipeline from stage: generate
+[INFO] 2026-01-11 13:19:29.932 Session ID: 28a6f3b5-e659-427b-b832-8febefebbdec
+[INFO] 2026-01-11 13:19:29.932 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 13:19:29.933 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\slides_academic_long
+[INFO] 2026-01-11 13:19:29.937 
+[INFO] 2026-01-11 13:19:29.937 Starting from stage: generate
+[INFO] 2026-01-11 13:19:29.937 
+[INFO] 2026-01-11 13:19:29.938 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:19:29.938 STAGE: GENERATE
+[INFO] 2026-01-11 13:19:29.938 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:19:31.682 Generating images...
+[INFO] 2026-01-11 13:19:33.131 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:19:33.131   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:19:33.132   Prompt length: 6229 chars
+[INFO] 2026-01-11 13:19:49.017 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:19:49.592 Image generation successful (Doubao, URL, 892744 bytes)
+[INFO] 2026-01-11 13:19:49.593   [1/12] Saved: slide_01.png
+[INFO] 2026-01-11 13:19:49.594 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:19:49.594   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:19:49.594   Prompt length: 6377 chars
+[INFO] 2026-01-11 13:20:09.480 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:20:10.211 Image generation successful (Doubao, URL, 957947 bytes)
+[INFO] 2026-01-11 13:20:10.217   [2/12] Saved: slide_02.png
+[INFO] 2026-01-11 13:20:10.218   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:20:10.218 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:20:10.219   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:20:10.219   Prompt length: 6515 chars
+[INFO] 2026-01-11 13:20:27.823 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:20:28.390 Image generation successful (Doubao, URL, 1048681 bytes)
+[INFO] 2026-01-11 13:20:28.392   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:20:28.392 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:20:28.392   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:20:28.392   Prompt length: 6528 chars
+[INFO] 2026-01-11 13:20:28.394   [3/12] Saved: slide_03.png
+[INFO] 2026-01-11 13:21:06.271 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:21:06.928 Image generation successful (Doubao, URL, 941266 bytes)
+[INFO] 2026-01-11 13:21:06.930   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:21:06.930 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:21:06.931   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:21:06.931   [4/12] Saved: slide_04.png
+[INFO] 2026-01-11 13:21:06.931   Prompt length: 6570 chars
+[INFO] 2026-01-11 13:21:25.116 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:21:25.833 Image generation successful (Doubao, URL, 1096032 bytes)
+[INFO] 2026-01-11 13:21:25.834   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:21:25.835 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:21:25.835   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:21:25.836   [5/12] Saved: slide_05.png
+[INFO] 2026-01-11 13:21:25.836   Prompt length: 6740 chars
+[INFO] 2026-01-11 13:21:46.200 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:21:46.789 Image generation successful (Doubao, URL, 969946 bytes)
+[INFO] 2026-01-11 13:21:46.790   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:21:46.790 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:21:46.791   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:21:46.791   Prompt length: 6690 chars
+[INFO] 2026-01-11 13:21:46.795   [6/12] Saved: slide_06.png
+[INFO] 2026-01-11 13:22:01.833 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:22:02.430 Image generation successful (Doubao, URL, 812723 bytes)
+[INFO] 2026-01-11 13:22:02.432   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:22:02.433 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:22:02.433   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:22:02.433   [7/12] Saved: slide_07.png
+[INFO] 2026-01-11 13:22:02.433   Prompt length: 6506 chars
+[INFO] 2026-01-11 13:22:17.923 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:22:18.739 Image generation successful (Doubao, URL, 928341 bytes)
+[INFO] 2026-01-11 13:22:18.741   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:22:18.741 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:22:18.742   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:22:18.742   Prompt length: 6831 chars
+[INFO] 2026-01-11 13:22:18.742   [8/12] Saved: slide_08.png
+[INFO] 2026-01-11 13:22:37.362 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:22:37.960 Image generation successful (Doubao, URL, 1041755 bytes)
+[INFO] 2026-01-11 13:22:37.962   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:22:37.962 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:22:37.963   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:22:37.963   [9/12] Saved: slide_09.png
+[INFO] 2026-01-11 13:22:37.963   Prompt length: 6916 chars
+[INFO] 2026-01-11 13:23:00.205 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:23:00.808 Image generation successful (Doubao, URL, 985940 bytes)
+[INFO] 2026-01-11 13:23:00.810   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:23:00.810 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:23:00.811   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:23:00.811   [10/12] Saved: slide_10.png
+[INFO] 2026-01-11 13:23:00.812   Prompt length: 6455 chars
+[INFO] 2026-01-11 13:23:17.995 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:23:18.620 Image generation successful (Doubao, URL, 1103974 bytes)
+[INFO] 2026-01-11 13:23:18.622   Including 1 reference image descriptions in prompt
+[INFO] 2026-01-11 13:23:18.622 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:23:18.622   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:23:18.623   Prompt length: 6309 chars
+[INFO] 2026-01-11 13:23:18.623   [11/12] Saved: slide_11.png
+[INFO] 2026-01-11 13:23:34.137 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:23:34.695 Image generation successful (Doubao, URL, 913160 bytes)
+[INFO] 2026-01-11 13:23:34.697   [12/12] Saved: slide_12.png
+[INFO] 2026-01-11 13:23:34.698   Generated 12 images
+[INFO] 2026-01-11 13:23:35.188   Saved: slides.pdf
+[INFO] 2026-01-11 13:23:35.188 
+[INFO] 2026-01-11 13:23:35.189 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\slides_academic_long\20260111_131931
+[INFO] 2026-01-11 13:23:35.192 
+[INFO] 2026-01-11 13:23:35.193 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:23:35.193 SUMMARY
+[INFO] 2026-01-11 13:23:35.193 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:23:35.194   [○] rag: pending
+[INFO] 2026-01-11 13:23:35.194   [○] summary: pending
+[INFO] 2026-01-11 13:23:35.194   [✓] plan: completed
+[INFO] 2026-01-11 13:23:35.195   [✓] generate: completed
+[INFO] 2026-01-11 13:23:35.197 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 生成完成，输出文件: 13 个
+[INFO] 2026-01-11 13:23:35.197 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 生成完成，输出文件: 13 个
+[INFO] 2026-01-11 13:23:35.201 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始上传文件...
+[INFO] 2026-01-11 13:23:35.201 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始上传文件...
+[INFO] 2026-01-11 13:23:35.880 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/slides.pdf
+[INFO] 2026-01-11 13:23:36.087 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_01.png
+[INFO] 2026-01-11 13:23:36.333 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_02.png
+[INFO] 2026-01-11 13:23:36.599 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_03.png
+[INFO] 2026-01-11 13:23:36.846 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_04.png
+[INFO] 2026-01-11 13:23:37.091 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_05.png
+[INFO] 2026-01-11 13:23:37.302 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_06.png
+[INFO] 2026-01-11 13:23:37.508 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_07.png
+[INFO] 2026-01-11 13:23:37.726 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_08.png
+[INFO] 2026-01-11 13:23:38.033 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_09.png
+[INFO] 2026-01-11 13:23:38.317 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_10.png
+[INFO] 2026-01-11 13:23:38.633 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_11.png
+[INFO] 2026-01-11 13:23:38.872 文件已上传: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_12.png
+[INFO] 2026-01-11 13:23:38.873 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件上传完成: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/slides.pdf
+[INFO] 2026-01-11 13:23:38.873 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 文件上传完成: kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/slides.pdf
+[INFO] 2026-01-11 13:23:38.878 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始更新用户数据...
+[INFO] 2026-01-11 13:23:38.878 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始更新用户数据...
+[INFO] 2026-01-11 13:23:38.883 只更新当前任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 13:23:38.883 只更新当前任务: 14c105ee-1e08-4a22-9f5b-247ec628cf29, update_system=False
+[INFO] 2026-01-11 13:23:38.884 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 用户数据更新完成
+[INFO] 2026-01-11 13:23:38.884 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 用户数据更新完成
+[INFO] 2026-01-11 13:23:38.887 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始更新系统数据...
+[INFO] 2026-01-11 13:23:38.887 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 开始更新系统数据...
+[INFO] 2026-01-11 13:23:38.888 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:23:38.888 [14c105ee-1e08-4a22-9f5b-247ec628cf29] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:23:38.891 任务执行完成: 14c105ee-1e08-4a22-9f5b-247ec628cf29, status=success
+[INFO] 2026-01-11 13:23:38.891 任务执行完成: 14c105ee-1e08-4a22-9f5b-247ec628cf29, status=success
+[INFO] 2026-01-11 13:23:38.892 任务成功: 14c105ee-1e08-4a22-9f5b-247ec628cf29
+[INFO] 2026-01-11 13:23:38.892 任务成功: 14c105ee-1e08-4a22-9f5b-247ec628cf29
+[INFO] 2026-01-11 13:23:40.913 运行中任务数减少: 0
+[INFO] 2026-01-11 13:23:40.916 已清理临时文件: 14c105ee-1e08-4a22-9f5b-247ec628cf29
+[INFO] 2026-01-11 13:23:40.916 已清理临时文件: 14c105ee-1e08-4a22-9f5b-247ec628cf29
+[INFO] 2026-01-11 13:23:40.920 Task celery_app.tasks.generate_slides_task[14c105ee-1e08-4a22-9f5b-247ec628cf29] succeeded in 255.56300000008196s: {'result_id': '14c105ee-1e08-4a22-9f5b-247ec628cf29', 'status': 'success', 'file_path': 'kb-slide-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/slides.pdf', 'images': ['0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_01.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_02.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_03.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_04.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_05.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_06.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/slide_07.png', '0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/14c105ee-1e08-4a22-9f5b-247ec628cf29/images/...', ...]}
+[INFO] 2026-01-11 13:43:25.497 Task celery_app.tasks.generate_slides_task[7d150aca-e8ed-4715-8d09-3278202a0b7c] received
+[INFO] 2026-01-11 13:43:25.500 开始执行任务: 7d150aca-e8ed-4715-8d09-3278202a0b7c, update_system=False
+[INFO] 2026-01-11 13:43:25.500 开始执行任务: 7d150aca-e8ed-4715-8d09-3278202a0b7c, update_system=False
+[INFO] 2026-01-11 13:43:25.614 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始参数校验...
+[INFO] 2026-01-11 13:43:25.614 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始参数校验...
+[INFO] 2026-01-11 13:43:25.621 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 任务状态已更新为 running
+[INFO] 2026-01-11 13:43:25.621 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 任务状态已更新为 running
+[INFO] 2026-01-11 13:43:25.625 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始下载文件...
+[INFO] 2026-01-11 13:43:25.625 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始下载文件...
+[INFO] 2026-01-11 13:43:25.627 [7d150aca-e8ed-4715-8d09-3278202a0b7c] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:43:25.627 [7d150aca-e8ed-4715-8d09-3278202a0b7c] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:43:25.810 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d150aca-e8ed-4715-8d09-3278202a0b7c\2501.11921.md
+[INFO] 2026-01-11 13:43:25.811 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d150aca-e8ed-4715-8d09-3278202a0b7c\2501.11921.md
+[INFO] 2026-01-11 13:43:25.811 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d150aca-e8ed-4715-8d09-3278202a0b7c\2501.11921.md
+[INFO] 2026-01-11 13:43:25.817 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始调用生成管道...
+[INFO] 2026-01-11 13:43:25.817 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始调用生成管道...
+[INFO] 2026-01-11 13:43:25.819 Starting pipeline from stage: generate
+[INFO] 2026-01-11 13:43:25.821 Session ID: 430ded38-4d01-47ce-b049-516cf46342b8
+[INFO] 2026-01-11 13:43:25.822 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 13:43:25.822 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 13:43:25.824 
+[INFO] 2026-01-11 13:43:25.825 Starting from stage: generate
+[INFO] 2026-01-11 13:43:25.825 
+[INFO] 2026-01-11 13:43:25.825 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:43:25.826 STAGE: GENERATE
+[INFO] 2026-01-11 13:43:25.826 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:43:25.830 Generating images...
+[INFO] 2026-01-11 13:43:27.817 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:43:27.817   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-11 13:43:27.818   Prompt length: 5426 chars
+[INFO] 2026-01-11 13:44:01.060 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-11 13:44:02.391 Image generation successful (Doubao, URL, 1374924 bytes)
+[INFO] 2026-01-11 13:44:02.396   [1/1] Saved: poster.png
+[INFO] 2026-01-11 13:44:02.398   Generated 1 images
+[INFO] 2026-01-11 13:44:02.399 
+[INFO] 2026-01-11 13:44:02.400 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_134325
+[INFO] 2026-01-11 13:44:02.403 
+[INFO] 2026-01-11 13:44:02.404 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:44:02.406 SUMMARY
+[INFO] 2026-01-11 13:44:02.406 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:44:02.407   [✓] rag: completed
+[INFO] 2026-01-11 13:44:02.407   [✓] summary: completed
+[INFO] 2026-01-11 13:44:02.407   [✓] plan: completed
+[INFO] 2026-01-11 13:44:02.408   [✓] generate: completed
+[INFO] 2026-01-11 13:44:02.409 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 13:44:02.409 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 13:44:02.411 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始上传文件...
+[INFO] 2026-01-11 13:44:02.411 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始上传文件...
+[INFO] 2026-01-11 13:44:02.788 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7d150aca-e8ed-4715-8d09-3278202a0b7c/poster.png
+[INFO] 2026-01-11 13:44:02.789 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7d150aca-e8ed-4715-8d09-3278202a0b7c/poster.png
+[INFO] 2026-01-11 13:44:02.789 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7d150aca-e8ed-4715-8d09-3278202a0b7c/poster.png
+[INFO] 2026-01-11 13:44:02.799 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始更新用户数据...
+[INFO] 2026-01-11 13:44:02.799 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始更新用户数据...
+[INFO] 2026-01-11 13:44:02.809 只更新当前任务: 7d150aca-e8ed-4715-8d09-3278202a0b7c, update_system=False
+[INFO] 2026-01-11 13:44:02.809 只更新当前任务: 7d150aca-e8ed-4715-8d09-3278202a0b7c, update_system=False
+[INFO] 2026-01-11 13:44:02.813 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 用户数据更新完成
+[INFO] 2026-01-11 13:44:02.813 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 用户数据更新完成
+[INFO] 2026-01-11 13:44:02.817 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始更新系统数据...
+[INFO] 2026-01-11 13:44:02.817 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 开始更新系统数据...
+[INFO] 2026-01-11 13:44:02.821 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:44:02.821 [7d150aca-e8ed-4715-8d09-3278202a0b7c] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 13:44:02.831 任务执行完成: 7d150aca-e8ed-4715-8d09-3278202a0b7c, status=success
+[INFO] 2026-01-11 13:44:02.831 任务执行完成: 7d150aca-e8ed-4715-8d09-3278202a0b7c, status=success
+[INFO] 2026-01-11 13:44:02.833 任务成功: 7d150aca-e8ed-4715-8d09-3278202a0b7c
+[INFO] 2026-01-11 13:44:02.833 任务成功: 7d150aca-e8ed-4715-8d09-3278202a0b7c
+[INFO] 2026-01-11 13:44:02.833 运行中任务数减少: 0
+[INFO] 2026-01-11 13:44:02.839 已清理临时文件: 7d150aca-e8ed-4715-8d09-3278202a0b7c
+[INFO] 2026-01-11 13:44:02.839 已清理临时文件: 7d150aca-e8ed-4715-8d09-3278202a0b7c
+[INFO] 2026-01-11 13:44:02.847 Task celery_app.tasks.generate_slides_task[7d150aca-e8ed-4715-8d09-3278202a0b7c] succeeded in 37.34400000004098s: {'result_id': '7d150aca-e8ed-4715-8d09-3278202a0b7c', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/7d150aca-e8ed-4715-8d09-3278202a0b7c/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-11 13:58:30.675 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 13:58:32.719 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-11 13:58:32.721 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-11 13:58:34.762 mingle: searching for neighbors
+[INFO] 2026-01-11 13:58:41.901 mingle: all alone
+[INFO] 2026-01-11 13:58:52.145 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-11 13:59:26.310 Task celery_app.tasks.generate_slides_task[e2d55669-04cc-42b9-9346-ebfc20a31f4a] received
+[INFO] 2026-01-11 13:59:28.467 开始执行任务: e2d55669-04cc-42b9-9346-ebfc20a31f4a, update_system=False
+[INFO] 2026-01-11 13:59:28.467 开始执行任务: e2d55669-04cc-42b9-9346-ebfc20a31f4a, update_system=False
+[INFO] 2026-01-11 13:59:31.027 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-11 13:59:31.086 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始参数校验...
+[INFO] 2026-01-11 13:59:31.086 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始参数校验...
+[INFO] 2026-01-11 13:59:31.091 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 任务状态已更新为 running
+[INFO] 2026-01-11 13:59:31.091 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 任务状态已更新为 running
+[INFO] 2026-01-11 13:59:31.098 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始下载文件...
+[INFO] 2026-01-11 13:59:31.098 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始下载文件...
+[INFO] 2026-01-11 13:59:31.099 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:59:31.099 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.11921.md
+[INFO] 2026-01-11 13:59:31.099 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-11 13:59:31.100 MinIO客户端初始化成功
+[INFO] 2026-01-11 13:59:31.342 文件已下载: kb-paper-original-md/arxiv/2025/2501.11921.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\e2d55669-04cc-42b9-9346-ebfc20a31f4a\2501.11921.md
+[INFO] 2026-01-11 13:59:31.343 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\e2d55669-04cc-42b9-9346-ebfc20a31f4a\2501.11921.md
+[INFO] 2026-01-11 13:59:31.343 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\e2d55669-04cc-42b9-9346-ebfc20a31f4a\2501.11921.md
+[INFO] 2026-01-11 13:59:31.347 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始调用生成管道...
+[INFO] 2026-01-11 13:59:31.347 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始调用生成管道...
+[INFO] 2026-01-11 13:59:31.349 Starting pipeline from stage: generate
+[INFO] 2026-01-11 13:59:31.350 Session ID: 8d5bca76-e826-4cef-ab0f-ca2c3be37c1c
+[INFO] 2026-01-11 13:59:31.350 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper
+[INFO] 2026-01-11 13:59:31.350 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense
+[INFO] 2026-01-11 13:59:31.356 
+[INFO] 2026-01-11 13:59:31.356 Starting from stage: generate
+[INFO] 2026-01-11 13:59:31.356 
+[INFO] 2026-01-11 13:59:31.357 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:59:31.357 STAGE: GENERATE
+[INFO] 2026-01-11 13:59:31.357 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 13:59:33.543 Generating images...
+[INFO] 2026-01-11 13:59:33.545 Calling DMXAPI image generation (attempt 1/3)...
+[INFO] 2026-01-11 13:59:33.545   Model: nano-banana-2, Aspect: 16:9, Size: 2K
+[INFO] 2026-01-11 13:59:33.545   Prompt length: 5157 chars
+[INFO] 2026-01-11 14:02:15.480 Image generation successful (DMXAPI, base64, 6588796 bytes)
+[INFO] 2026-01-11 14:02:15.489   [1/1] Saved: poster.png
+[INFO] 2026-01-11 14:02:15.489   Generated 1 images
+[INFO] 2026-01-11 14:02:15.490 
+[INFO] 2026-01-11 14:02:15.490 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.11921\paper\fast\poster_academic_dense\20260111_135933
+[INFO] 2026-01-11 14:02:15.492 
+[INFO] 2026-01-11 14:02:15.492 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 14:02:15.493 SUMMARY
+[INFO] 2026-01-11 14:02:15.493 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-11 14:02:15.493   [✓] rag: completed
+[INFO] 2026-01-11 14:02:15.494   [✓] summary: completed
+[INFO] 2026-01-11 14:02:15.494   [✓] plan: completed
+[INFO] 2026-01-11 14:02:15.494   [✓] generate: completed
+[INFO] 2026-01-11 14:02:15.496 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 14:02:15.496 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 生成完成，输出文件: 1 个
+[INFO] 2026-01-11 14:02:15.498 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始上传文件...
+[INFO] 2026-01-11 14:02:15.498 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始上传文件...
+[INFO] 2026-01-11 14:02:18.173 文件已上传: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/e2d55669-04cc-42b9-9346-ebfc20a31f4a/poster.png
+[INFO] 2026-01-11 14:02:18.174 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/e2d55669-04cc-42b9-9346-ebfc20a31f4a/poster.png
+[INFO] 2026-01-11 14:02:18.174 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 文件上传完成: kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/e2d55669-04cc-42b9-9346-ebfc20a31f4a/poster.png
+[INFO] 2026-01-11 14:02:18.180 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始更新用户数据...
+[INFO] 2026-01-11 14:02:18.180 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始更新用户数据...
+[INFO] 2026-01-11 14:02:18.184 只更新当前任务: e2d55669-04cc-42b9-9346-ebfc20a31f4a, update_system=False
+[INFO] 2026-01-11 14:02:18.184 只更新当前任务: e2d55669-04cc-42b9-9346-ebfc20a31f4a, update_system=False
+[INFO] 2026-01-11 14:02:18.185 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 用户数据更新完成
+[INFO] 2026-01-11 14:02:18.185 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 用户数据更新完成
+[INFO] 2026-01-11 14:02:18.188 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始更新系统数据...
+[INFO] 2026-01-11 14:02:18.188 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 开始更新系统数据...
+[INFO] 2026-01-11 14:02:18.191 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 14:02:18.191 [e2d55669-04cc-42b9-9346-ebfc20a31f4a] 跳过系统数据更新, paper_type=user, update_system=False
+[INFO] 2026-01-11 14:02:18.196 任务执行完成: e2d55669-04cc-42b9-9346-ebfc20a31f4a, status=success
+[INFO] 2026-01-11 14:02:18.196 任务执行完成: e2d55669-04cc-42b9-9346-ebfc20a31f4a, status=success
+[INFO] 2026-01-11 14:02:18.197 任务成功: e2d55669-04cc-42b9-9346-ebfc20a31f4a
+[INFO] 2026-01-11 14:02:18.197 任务成功: e2d55669-04cc-42b9-9346-ebfc20a31f4a
+[INFO] 2026-01-11 14:02:20.235 运行中任务数减少: 0
+[INFO] 2026-01-11 14:02:20.238 已清理临时文件: e2d55669-04cc-42b9-9346-ebfc20a31f4a
+[INFO] 2026-01-11 14:02:20.238 已清理临时文件: e2d55669-04cc-42b9-9346-ebfc20a31f4a
+[INFO] 2026-01-11 14:02:20.241 Task celery_app.tasks.generate_slides_task[e2d55669-04cc-42b9-9346-ebfc20a31f4a] succeeded in 173.92199999978766s: {'result_id': 'e2d55669-04cc-42b9-9346-ebfc20a31f4a', 'status': 'success', 'file_path': 'kb-poster-user/0d55e6afb59cb5012a0dcff67a6ee742/2501.11921/e2d55669-04cc-42b9-9346-ebfc20a31f4a/poster.png', 'images': None, 'error_message': None}

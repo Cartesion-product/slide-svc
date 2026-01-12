@@ -1,0 +1,220 @@
+{
+  "content_type": "paper",
+  "content": {
+    "paper_info": "**Title**: A Statistical Hypothesis Testing Framework for Data Misappropriation Detection in Large Language Models\n**Authors**: Yinpeng Cai (Peking University), Lexin Li (University of California at Berkeley), Linjun Zhang (Rutgers University)",
+    "figures": "",
+    "tables": "",
+    "equations": "",
+    "motivation": "",
+    "solution": "",
+    "results": "",
+    "contributions": "",
+    "raw_rag_results": {
+      "paper_info": [
+        {
+          "query": "List the paper title, author names and their institutional affiliations.",
+          "answer": "**Title**: A Statistical Hypothesis Testing Framework for Data Misappropriation Detection in Large Language Models\n**Authors**: Yinpeng Cai (Peking University), Lexin Li (University of California at Berkeley), Linjun Zhang (Rutgers University)",
+          "mode": "direct_markdown_extraction",
+          "success": true
+        }
+      ],
+      "figures": [
+        {
+          "query": "Describe the architecture or framework diagram. What are the main components shown?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "tables": [
+        {
+          "query": "Show the main performance comparison table with all methods and metrics. Include exact numbers.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "Show the ablation study table with all variants and their results.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "Show any dataset statistics table with sizes, splits, and other details.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "equations": [
+        {
+          "query": "What is the core model formulation or main equation? Show the exact formula and notation.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "motivation": [
+        {
+          "query": "What problem or task does this paper aim to solve? Describe the specific challenges.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What are the limitations or drawbacks of existing approaches mentioned in the introduction or related work?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What gap or unmet need motivates this research? How is it different from prior work?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "solution": [
+        {
+          "query": "What method, approach, or framework does this paper propose? Provide an overview.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What are the main components, modules, or steps of the proposed method?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "Describe the system design, model structure, or theoretical framework. Include any architecture diagrams or tables if present.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What are the key equations, formulas, or mathematical formulations? Show the notation and mathematical expressions.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What objective function, optimization goal, or theoretical derivation is used?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What is the algorithm, procedure, or workflow? Describe the key steps.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What are the key parameters, settings, or implementation details mentioned?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "results": [
+        {
+          "query": "What datasets, benchmarks, or experimental setups are used for evaluation?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What evaluation metrics or criteria are used to measure performance?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What are the main results shown in the main results table?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "How does the proposed method compare to baseline methods? Show the comparison.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What performance does the method achieve? Report the exact numbers from experiments.",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What ablation study or sensitivity analysis is conducted? What are the findings?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What analysis, case study, or discussion of the results is provided?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ],
+      "contributions": [
+        {
+          "query": "What are the main contributions listed in the introduction or conclusion?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What is novel or new about this work compared to existing methods?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        },
+        {
+          "query": "What limitations does the paper acknowledge? What future directions are suggested?",
+          "answer": null,
+          "mode": "fast_direct_with_vision",
+          "success": false,
+          "error": "Error code: 400 - {'error': {'message': '获取模型实例信息失败: No model instance data found', 'type': 'invalid_model_instance'}}"
+        }
+      ]
+    }
+  },
+  "origin": {
+    "tables": [],
+    "figures": [],
+    "base_path": "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\sources\\uploads\\54b1bf70-5f9c-488c-a1c3-dad7b5dbee84"
+  },
+  "markdown_paths": [
+    "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\sources\\uploads\\54b1bf70-5f9c-488c-a1c3-dad7b5dbee84\\2501.02441.md"
+  ]
+}

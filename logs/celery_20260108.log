@@ -1,0 +1,819 @@
+[INFO] 2026-01-08 10:24:59.294 Connected to redis://:**@localhost:6379/0
+[INFO] 2026-01-08 10:25:01.341 mingle: searching for neighbors
+[WARNING] 2026-01-08 10:25:08.513 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 10:25:08.513 mingle: all alone
+[INFO] 2026-01-08 10:25:18.788 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 10:56:21.792 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 10:56:23.854 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 10:56:23.857 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 10:56:25.886 mingle: searching for neighbors
+[WARNING] 2026-01-08 10:56:33.031 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 10:56:33.032 mingle: all alone
+[INFO] 2026-01-08 10:56:43.251 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 11:01:45.894 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:01:47.941 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:01:47.942 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:01:49.969 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:01:57.120 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:01:57.122 mingle: all alone
+[INFO] 2026-01-08 11:02:07.339 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 11:08:26.401 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:08:28.413 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:08:28.414 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:08:30.459 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:08:37.610 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:08:37.611 mingle: all alone
+[INFO] 2026-01-08 11:08:47.834 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 11:20:29.904 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:20:31.948 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:20:31.950 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:20:36.032 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:20:43.168 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:20:43.168 mingle: all alone
+[INFO] 2026-01-08 11:20:51.381 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-08 11:21:37.575 Task celery_app.tasks.generate_slides_task[41a5dca5-658c-44b9-b489-177614f15657] received
+[INFO] 2026-01-08 11:21:39.681 开始执行任务: 41a5dca5-658c-44b9-b489-177614f15657, update_system=True
+[INFO] 2026-01-08 11:21:39.681 开始执行任务: 41a5dca5-658c-44b9-b489-177614f15657, update_system=True
+[INFO] 2026-01-08 11:21:42.006 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-08 11:21:55.860 [41a5dca5-658c-44b9-b489-177614f15657] 开始参数校验...
+[INFO] 2026-01-08 11:21:55.860 [41a5dca5-658c-44b9-b489-177614f15657] 开始参数校验...
+[INFO] 2026-01-08 11:21:55.864 [41a5dca5-658c-44b9-b489-177614f15657] 任务状态已更新为 running
+[INFO] 2026-01-08 11:21:55.864 [41a5dca5-658c-44b9-b489-177614f15657] 任务状态已更新为 running
+[INFO] 2026-01-08 11:21:55.872 [41a5dca5-658c-44b9-b489-177614f15657] 开始下载文件...
+[INFO] 2026-01-08 11:21:55.872 [41a5dca5-658c-44b9-b489-177614f15657] 开始下载文件...
+[INFO] 2026-01-08 11:21:55.873 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-08 11:21:55.874 MinIO客户端初始化成功
+[ERROR] 2026-01-08 11:21:55.935 下载文件失败: The specified bucket does not exist
+[ERROR] 2026-01-08 11:21:55.935 [41a5dca5-658c-44b9-b489-177614f15657] 文件下载失败: 下载文件失败: The specified bucket does not exist
+[ERROR] 2026-01-08 11:21:55.935 [41a5dca5-658c-44b9-b489-177614f15657] 文件下载失败: 下载文件失败: The specified bucket does not exist
+[ERROR] 2026-01-08 11:21:55.955 智能体执行失败: 下载文件失败: The specified bucket does not exist
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 158, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A366E34E54A8, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 499, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 186, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 168, in download_file
+    raise Exception(error_msg)
+Exception: 下载文件失败: The specified bucket does not exist
+During task with name 'download_file' and id '2022e6e6-8e18-3e68-e808-592d9fafc6d2'
+
+[ERROR] 2026-01-08 11:21:55.955 智能体执行失败: 下载文件失败: The specified bucket does not exist
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 158, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A366E34E54A8, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 499, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 186, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 168, in download_file
+    raise Exception(error_msg)
+Exception: 下载文件失败: The specified bucket does not exist
+During task with name 'download_file' and id '2022e6e6-8e18-3e68-e808-592d9fafc6d2'
+
+[ERROR] 2026-01-08 11:21:55.956 任务失败: 41a5dca5-658c-44b9-b489-177614f15657, 错误: 下载文件失败: The specified bucket does not exist
+[ERROR] 2026-01-08 11:21:55.956 任务失败: 41a5dca5-658c-44b9-b489-177614f15657, 错误: 下载文件失败: The specified bucket does not exist
+[INFO] 2026-01-08 11:21:58.012 运行中任务数减少: 0
+[INFO] 2026-01-08 11:21:58.015 已清理临时文件: 41a5dca5-658c-44b9-b489-177614f15657
+[INFO] 2026-01-08 11:21:58.015 已清理临时文件: 41a5dca5-658c-44b9-b489-177614f15657
+[ERROR] 2026-01-08 11:21:58.044 Task celery_app.tasks.generate_slides_task[41a5dca5-658c-44b9-b489-177614f15657] raised unexpected: Exception('下载文件失败: The specified bucket does not exist')
+[WARNING] 2026-01-08 11:37:45.586 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:37:47.624 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:37:47.626 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:37:49.664 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:37:56.855 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:37:56.855 mingle: all alone
+[INFO] 2026-01-08 11:38:07.095 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 11:39:45.585 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:39:47.645 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:39:47.646 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:39:49.693 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:39:56.893 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:39:56.896 mingle: all alone
+[INFO] 2026-01-08 11:40:07.144 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 11:43:36.389 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:43:38.449 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:43:38.450 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:43:40.481 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:43:47.617 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:43:47.617 mingle: all alone
+[INFO] 2026-01-08 11:43:57.820 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-08 11:45:02.890 Task celery_app.tasks.generate_slides_task[ca8a7ced-2440-4710-ae2a-161bb50cc0ff] received
+[INFO] 2026-01-08 11:45:04.994 开始执行任务: ca8a7ced-2440-4710-ae2a-161bb50cc0ff, update_system=True
+[INFO] 2026-01-08 11:45:04.994 开始执行任务: ca8a7ced-2440-4710-ae2a-161bb50cc0ff, update_system=True
+[INFO] 2026-01-08 11:45:08.183 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-08 11:45:11.914 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 开始参数校验...
+[INFO] 2026-01-08 11:45:11.914 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 开始参数校验...
+[INFO] 2026-01-08 11:45:11.917 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 任务状态已更新为 running
+[INFO] 2026-01-08 11:45:11.917 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 任务状态已更新为 running
+[INFO] 2026-01-08 11:45:11.923 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 开始下载文件...
+[INFO] 2026-01-08 11:45:11.923 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 开始下载文件...
+[INFO] 2026-01-08 11:45:21.603 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-08 11:45:21.604 MinIO客户端初始化成功
+[ERROR] 2026-01-08 11:45:21.723 下载文件失败: Object does not exist
+[ERROR] 2026-01-08 11:45:22.278 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 文件下载失败: 下载文件失败: Object does not exist
+[ERROR] 2026-01-08 11:45:22.278 [ca8a7ced-2440-4710-ae2a-161bb50cc0ff] 文件下载失败: 下载文件失败: Object does not exist
+[ERROR] 2026-01-08 11:45:22.293 智能体执行失败: 下载文件失败: Object does not exist
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 158, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 444, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: Object does not exist, resource: /kb-paper-original-md/arxiv/2025, request_id: 1888A4AE30E71886, host_id: None, bucket_name: kb-paper-original-md, object_name: arxiv/2025
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 496, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 183, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 168, in download_file
+    raise Exception(error_msg)
+Exception: 下载文件失败: Object does not exist
+During task with name 'download_file' and id '99f7cfdb-7780-ad50-e25d-b47ae9e25092'
+
+[ERROR] 2026-01-08 11:45:22.293 智能体执行失败: 下载文件失败: Object does not exist
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 158, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 444, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: Object does not exist, resource: /kb-paper-original-md/arxiv/2025, request_id: 1888A4AE30E71886, host_id: None, bucket_name: kb-paper-original-md, object_name: arxiv/2025
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 496, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 183, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 168, in download_file
+    raise Exception(error_msg)
+Exception: 下载文件失败: Object does not exist
+During task with name 'download_file' and id '99f7cfdb-7780-ad50-e25d-b47ae9e25092'
+
+[ERROR] 2026-01-08 11:45:22.294 任务失败: ca8a7ced-2440-4710-ae2a-161bb50cc0ff, 错误: 下载文件失败: Object does not exist
+[ERROR] 2026-01-08 11:45:22.294 任务失败: ca8a7ced-2440-4710-ae2a-161bb50cc0ff, 错误: 下载文件失败: Object does not exist
+[INFO] 2026-01-08 11:45:24.338 运行中任务数减少: 0
+[INFO] 2026-01-08 11:45:24.339 已清理临时文件: ca8a7ced-2440-4710-ae2a-161bb50cc0ff
+[INFO] 2026-01-08 11:45:24.339 已清理临时文件: ca8a7ced-2440-4710-ae2a-161bb50cc0ff
+[ERROR] 2026-01-08 11:45:24.344 Task celery_app.tasks.generate_slides_task[ca8a7ced-2440-4710-ae2a-161bb50cc0ff] raised unexpected: Exception('下载文件失败: Object does not exist')
+[WARNING] 2026-01-08 11:51:57.581 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:51:59.634 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 11:51:59.635 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 11:52:01.677 mingle: searching for neighbors
+[WARNING] 2026-01-08 11:52:08.849 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 11:52:08.849 mingle: all alone
+[INFO] 2026-01-08 11:52:19.067 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:23:04.156 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:23:06.219 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:23:06.220 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:23:08.255 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:23:15.401 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:23:15.401 mingle: all alone
+[INFO] 2026-01-08 13:23:25.653 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:31:52.480 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:31:54.520 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:31:54.523 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:31:58.587 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:32:05.719 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:32:05.719 mingle: all alone
+[INFO] 2026-01-08 13:32:13.876 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:41:35.297 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:41:37.337 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:41:37.339 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:41:39.375 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:41:46.506 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:41:46.507 mingle: all alone
+[INFO] 2026-01-08 13:41:56.680 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:46:50.436 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:46:52.487 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:46:52.489 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:46:54.530 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:47:01.702 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:47:01.703 mingle: all alone
+[INFO] 2026-01-08 13:47:11.932 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:53:43.761 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:53:45.813 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:53:45.815 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:53:47.869 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:53:55.031 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:53:55.031 mingle: all alone
+[INFO] 2026-01-08 13:54:05.264 celery@DESKTOP-4FIVBBU ready.
+[WARNING] 2026-01-08 13:55:52.347 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:55:54.385 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 13:55:54.386 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 13:55:56.448 mingle: searching for neighbors
+[WARNING] 2026-01-08 13:56:03.598 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 13:56:03.599 mingle: all alone
+[INFO] 2026-01-08 13:56:13.867 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-08 13:56:34.523 Task celery_app.tasks.generate_slides_task[7d1c005f-c829-40c4-83ac-c803951ff7bb] received
+[INFO] 2026-01-08 13:56:36.615 开始执行任务: 7d1c005f-c829-40c4-83ac-c803951ff7bb, update_system=True
+[INFO] 2026-01-08 13:56:36.615 开始执行任务: 7d1c005f-c829-40c4-83ac-c803951ff7bb, update_system=True
+[INFO] 2026-01-08 13:56:39.534 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-08 13:56:42.082 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始参数校验...
+[INFO] 2026-01-08 13:56:42.082 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始参数校验...
+[INFO] 2026-01-08 13:56:42.085 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 任务状态已更新为 running
+[INFO] 2026-01-08 13:56:42.085 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 任务状态已更新为 running
+[INFO] 2026-01-08 13:56:42.095 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始下载文件...
+[INFO] 2026-01-08 13:56:42.095 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始下载文件...
+[INFO] 2026-01-08 13:56:42.096 [7d1c005f-c829-40c4-83ac-c803951ff7bb] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.02441.md
+[INFO] 2026-01-08 13:56:42.096 [7d1c005f-c829-40c4-83ac-c803951ff7bb] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.02441.md
+[INFO] 2026-01-08 13:56:42.097 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-08 13:56:42.099 MinIO客户端初始化成功
+[INFO] 2026-01-08 13:56:42.355 文件已下载: kb-paper-original-md/arxiv/2025/2501.02441.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d1c005f-c829-40c4-83ac-c803951ff7bb\2501.02441.md
+[INFO] 2026-01-08 13:56:42.355 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d1c005f-c829-40c4-83ac-c803951ff7bb\2501.02441.md
+[INFO] 2026-01-08 13:56:42.355 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\7d1c005f-c829-40c4-83ac-c803951ff7bb\2501.02441.md
+[INFO] 2026-01-08 13:56:42.359 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始调用生成管道...
+[INFO] 2026-01-08 13:56:42.359 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始调用生成管道...
+[INFO] 2026-01-08 13:56:56.006 Starting pipeline from stage: generate
+[INFO] 2026-01-08 13:56:56.006 Session ID: 71b5e2bc-78f4-469e-a256-4039a0c4e9fe
+[INFO] 2026-01-08 13:56:56.006 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper
+[INFO] 2026-01-08 13:56:56.007 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper\fast\poster_academic_dense
+[INFO] 2026-01-08 13:56:56.013 
+[INFO] 2026-01-08 13:56:56.014 Starting from stage: generate
+[INFO] 2026-01-08 13:56:56.014 
+[INFO] 2026-01-08 13:56:56.014 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 13:56:56.015 STAGE: GENERATE
+[INFO] 2026-01-08 13:56:56.015 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 13:56:58.171 Generating images...
+[INFO] 2026-01-08 13:56:59.628 Prompt============================>【重要】生成的图片中所有文字内容必须使用简体中文！
+宽幅横向海报布局（16：9宽高比）。就一张海报。保持信息密度适中，留白以便阅读。
+
+学术会议海报风格，采用正式、严谨、学术的语调，偏重于研究报告，背景光线洁净。仅限中文文本，专业术语或缩写可保留英文作为辅助说明，但不能一张图全是英文，文字部分仅使用10笔画以内的简单汉字，确保文字清晰可读，避免繁体字和生僻字。使用专业、清晰的色调，搭配良好的对比度和学术字体。使用三列布局，展示故事进展。保留内容细节。顶部的标题部分可以用彩色背景条来突出。数据：保留原始科学数据——保持其准确性、风格和完整性。如有，请附上机构标志。信息需正规严谨，学术领域，面向科研人员和知识工作者等用户。
+
+可视化：
+- 使用图表和图标来表示概念
+- 将数据/数字可视化为图表
+- 使用项目符号，突出关键指标
+- 保持背景干净简洁
+
+参考图：重新绘制以匹配视觉风格和配色方案。保留原始结构和关键信息，但让它们与海报设计无缝融合。
+
+---
+Content:
+## A Statistical Hypothesis Testing Framework for Data Misappropriation Detection in Large Language Models
+
+Yinpeng Cai (Peking University), Lexin Li (University of California at Berkeley), Linjun Zhang (Rutgers University). This research addresses the critical challenge of detecting whether proprietary data has been misappropriated or used without authorization to train Large Language Models (LLMs).
+
+---
+
+## Background and Motivation
+
+The rapid advancement of Large Language Models (LLMs) depends heavily on massive datasets. However, this has led to significant concerns regarding data misappropriation, where proprietary or copyrighted data is used for training without consent. Existing detection methods, such as membership inference attacks (MIA) and dataset lineage tracing, often lack a rigorous statistical foundation, leading to high false-positive rates or insufficient power. Current limitations include: 1) The 'black-box' nature of LLMs makes it difficult to verify training sets. 2) Traditional metrics like perplexity are sensitive to distribution shifts and prompt engineering. 3) There is a lack of a formal hypothesis testing framework that can provide provable guarantees on the Type-I error (false discovery) while maintaining high power in detecting data leakage across diverse text domains.
+
+---
+
+## Methodology: Statistical Hypothesis Testing Framework
+
+The proposed framework formulates data misappropriation detection as a formal hypothesis test. Let \( D_{test} \) be the suspicious dataset and \( \mathcal{M} \) be the target LLM. The null hypothesis \( H_0 \) posits that \( D_{test} \) was not used in training \( \mathcal{M} \), while the alternative \( H_1 \) suggests it was. The framework utilizes a log-likelihood based statistic: \( S = rac{1}{n} \sum_{i=1}^n \log P_{\mathcal{M}}(x_i | x_{<i}) \), where \( x_i \) are tokens in the test set. To account for the inherent complexity of different text samples, the method employs a 'Reference Model' \( \mathcal{M}_{ref} \) to normalize the scores. The test statistic is defined as: \( T = rac{1}{n} \sum_{i=1}^n \log rac{P_{\mathcal{M}}(x_i)}{P_{\mathcal{M}_{ref}}(x_i)} \). If \( T \) exceeds a threshold determined by the distribution under \( H_0 \), the null hypothesis is rejected. The framework includes a calibration step using a proxy non-member dataset to estimate the null distribution's variance and mean, ensuring the p-values are uniformly distributed under \( H_0 \). This allows for controlling the False Positive Rate (FPR) at a pre-specified level \( \alpha \).
+
+---
+
+## Experimental Results and Evaluation
+
+The framework was evaluated using multiple LLMs, including LLaMA-7B, OPT-6.7B, and GPT-2, across various datasets like Wikitext-103, Enron Emails, and CodeSearchNet. The experiments focused on the Power of the test (True Positive Rate) at a fixed Type-I error rate (FPR = 0.05). For LLaMA-7B, the framework achieved a detection power of 0.94 on Wikitext and 0.88 on specialized code datasets, significantly outperforming baseline MIA methods which hovered around 0.65-0.72. Sensitivity analysis showed that even with partial misappropriation (where only 10% of the proprietary data is used), the framework maintains a power above 0.75. Ablation studies on the reference model selection indicated that using a model from the same family but smaller scale (e.g., LLaMA-1.3B as a reference for LLaMA-7B) provides the most stable calibration. The results also demonstrate robustness against common obfuscation techniques like synonym substitution and paraphrasing, where the detection power remained above 0.82.
+
+---
+
+## Conclusion and Key Contributions
+
+The paper provides a rigorous mathematical foundation for detecting data misappropriation in LLMs. Key contributions include: 1) The introduction of a formal statistical hypothesis testing framework that allows for controlled Type-I error rates. 2) The development of a reference-normalized test statistic that effectively mitigates the impact of text intrinsic difficulty. 3) Extensive empirical validation showing that the method is highly effective even under low-data regimes and adversarial settings. 4) The framework is model-agnostic and can be applied to any LLM with likelihood access, providing a practical tool for IP protection in the AI era. The findings suggest that statistical signatures of training data remain detectable even after extensive fine-tuning or alignment processes.
+生成图片中所有文字使用清晰易读的字体，确保所有中文字体印刷级清晰。...
+[INFO] 2026-01-08 13:56:59.629 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-08 13:56:59.629   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-08 13:56:59.630   Prompt length: 4937 chars
+[INFO] 2026-01-08 13:57:38.005 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-08 13:57:38.845 Image generation successful (Doubao, URL, 1354611 bytes)
+[INFO] 2026-01-08 13:57:38.849   [1/1] Saved: poster.png
+[INFO] 2026-01-08 13:57:38.851   Generated 1 images
+[INFO] 2026-01-08 13:57:38.851 
+[INFO] 2026-01-08 13:57:38.851 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper\fast\poster_academic_dense\20260108_135658
+[INFO] 2026-01-08 13:57:38.860 
+[INFO] 2026-01-08 13:57:38.861 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 13:57:38.861 SUMMARY
+[INFO] 2026-01-08 13:57:38.862 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 13:57:38.862   [✓] rag: completed
+[INFO] 2026-01-08 13:57:38.863   [✓] summary: completed
+[INFO] 2026-01-08 13:57:38.863   [✓] plan: completed
+[INFO] 2026-01-08 13:57:38.864   [✓] generate: completed
+[INFO] 2026-01-08 13:58:46.801 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 生成完成，输出文件: 1 个
+[INFO] 2026-01-08 13:58:46.801 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 生成完成，输出文件: 1 个
+[INFO] 2026-01-08 13:58:48.935 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始上传文件...
+[INFO] 2026-01-08 13:58:48.935 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始上传文件...
+[INFO] 2026-01-08 13:58:55.366 已创建 MinIO bucket: kb-poster-system
+[INFO] 2026-01-08 13:58:55.672 文件已上传: kb-poster-system/arxiv/2501.02441/images/poster.png
+[INFO] 2026-01-08 13:59:09.306 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 文件上传完成: kb-poster-system/arxiv/2501.02441/images/poster.png
+[INFO] 2026-01-08 13:59:09.306 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 文件上传完成: kb-poster-system/arxiv/2501.02441/images/poster.png
+[INFO] 2026-01-08 13:59:13.335 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始更新用户数据...
+[INFO] 2026-01-08 13:59:13.335 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始更新用户数据...
+[INFO] 2026-01-08 13:59:13.343 批量更新完成: 7d1c005f-c829-40c4-83ac-c803951ff7bb, update_system=True
+[INFO] 2026-01-08 13:59:13.343 批量更新完成: 7d1c005f-c829-40c4-83ac-c803951ff7bb, update_system=True
+[INFO] 2026-01-08 13:59:21.407 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 用户数据更新完成
+[INFO] 2026-01-08 13:59:21.407 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 用户数据更新完成
+[INFO] 2026-01-08 13:59:30.890 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始更新系统数据...
+[INFO] 2026-01-08 13:59:30.890 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 开始更新系统数据...
+[INFO] 2026-01-08 14:00:05.639 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 系统数据更新完成, update_system=True
+[INFO] 2026-01-08 14:00:05.639 [7d1c005f-c829-40c4-83ac-c803951ff7bb] 系统数据更新完成, update_system=True
+[INFO] 2026-01-08 14:00:05.647 任务执行完成: 7d1c005f-c829-40c4-83ac-c803951ff7bb, status=success
+[INFO] 2026-01-08 14:00:05.647 任务执行完成: 7d1c005f-c829-40c4-83ac-c803951ff7bb, status=success
+[INFO] 2026-01-08 14:00:05.647 任务成功: 7d1c005f-c829-40c4-83ac-c803951ff7bb
+[INFO] 2026-01-08 14:00:05.647 任务成功: 7d1c005f-c829-40c4-83ac-c803951ff7bb
+[INFO] 2026-01-08 14:00:07.685 运行中任务数减少: 0
+[INFO] 2026-01-08 14:00:07.687 已清理临时文件: 7d1c005f-c829-40c4-83ac-c803951ff7bb
+[INFO] 2026-01-08 14:00:07.687 已清理临时文件: 7d1c005f-c829-40c4-83ac-c803951ff7bb
+[INFO] 2026-01-08 14:00:07.693 Task celery_app.tasks.generate_slides_task[7d1c005f-c829-40c4-83ac-c803951ff7bb] succeeded in 213.17200000025332s: {'result_id': '7d1c005f-c829-40c4-83ac-c803951ff7bb', 'status': 'success', 'file_path': 'kb-poster-system/arxiv/2501.02441/images/poster.png', 'images': None, 'error_message': None}
+[WARNING] 2026-01-08 14:32:32.735 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 14:32:34.785 Connected to redis://:**@localhost:6379/0
+[WARNING] 2026-01-08 14:32:34.786 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[INFO] 2026-01-08 14:32:36.847 mingle: searching for neighbors
+[WARNING] 2026-01-08 14:32:44.044 X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[INFO] 2026-01-08 14:32:44.045 mingle: all alone
+[INFO] 2026-01-08 14:32:54.345 celery@DESKTOP-4FIVBBU ready.
+[INFO] 2026-01-08 14:35:16.044 Task celery_app.tasks.generate_slides_task[f28a8d51-baa7-49e3-901e-119f7da7c372] received
+[INFO] 2026-01-08 14:35:18.166 开始执行任务: f28a8d51-baa7-49e3-901e-119f7da7c372, update_system=True
+[INFO] 2026-01-08 14:35:18.166 开始执行任务: f28a8d51-baa7-49e3-901e-119f7da7c372, update_system=True
+[INFO] 2026-01-08 14:35:21.511 MongoDB 连接成功: slide_svc
+[INFO] 2026-01-08 14:35:26.199 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始参数校验...
+[INFO] 2026-01-08 14:35:26.199 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始参数校验...
+[INFO] 2026-01-08 14:35:26.206 [f28a8d51-baa7-49e3-901e-119f7da7c372] 任务状态已更新为 running
+[INFO] 2026-01-08 14:35:26.206 [f28a8d51-baa7-49e3-901e-119f7da7c372] 任务状态已更新为 running
+[INFO] 2026-01-08 14:35:26.217 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始下载文件...
+[INFO] 2026-01-08 14:35:26.217 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始下载文件...
+[INFO] 2026-01-08 14:35:26.218 [f28a8d51-baa7-49e3-901e-119f7da7c372] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.02441.md
+[INFO] 2026-01-08 14:35:26.218 [f28a8d51-baa7-49e3-901e-119f7da7c372] MinIO 下载参数 - Bucket: kb-paper-original-md, Object: arxiv/2025/2501.02441.md
+[INFO] 2026-01-08 14:35:26.218 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[INFO] 2026-01-08 14:35:26.219 MinIO客户端初始化成功
+[INFO] 2026-01-08 14:35:26.500 文件已下载: kb-paper-original-md/arxiv/2025/2501.02441.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\f28a8d51-baa7-49e3-901e-119f7da7c372\2501.02441.md
+[INFO] 2026-01-08 14:35:26.500 [f28a8d51-baa7-49e3-901e-119f7da7c372] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\f28a8d51-baa7-49e3-901e-119f7da7c372\2501.02441.md
+[INFO] 2026-01-08 14:35:26.500 [f28a8d51-baa7-49e3-901e-119f7da7c372] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\f28a8d51-baa7-49e3-901e-119f7da7c372\2501.02441.md
+[INFO] 2026-01-08 14:35:26.504 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始调用生成管道...
+[INFO] 2026-01-08 14:35:26.504 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始调用生成管道...
+[INFO] 2026-01-08 14:35:26.507 Starting pipeline from stage: generate
+[INFO] 2026-01-08 14:35:26.507 Session ID: e196e360-6332-4870-b9e2-9c5654fdebf3
+[INFO] 2026-01-08 14:35:26.507 Base dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper
+[INFO] 2026-01-08 14:35:26.508 Config dir: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper\fast\poster_academic_dense
+[INFO] 2026-01-08 14:35:26.512 
+[INFO] 2026-01-08 14:35:26.512 Starting from stage: generate
+[INFO] 2026-01-08 14:35:26.513 
+[INFO] 2026-01-08 14:35:26.513 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 14:35:26.514 STAGE: GENERATE
+[INFO] 2026-01-08 14:35:26.514 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 14:35:28.576 Generating images...
+[INFO] 2026-01-08 14:35:30.451 Prompt============================>【重要】生成的图片中所有文字内容必须使用简体中文！
+宽幅横向海报布局（16：9宽高比）。就一张海报。保持信息密度适中，留白以便阅读。
+
+学术会议海报风格，采用正式、严谨、学术的语调，偏重于研究报告，背景光线洁净。仅限中文文本，专业术语或缩写可保留英文作为辅助说明，但不能一张图全是英文，文字部分仅使用10笔画以内的简单汉字，确保文字清晰可读，避免繁体字和生僻字。使用专业、清晰的色调，搭配良好的对比度和学术字体。使用三列布局，展示故事进展。保留内容细节。顶部的标题部分可以用彩色背景条来突出。数据：保留原始科学数据——保持其准确性、风格和完整性。如有，请附上机构标志。信息需正规严谨，学术领域，面向科研人员和知识工作者等用户。
+
+可视化：
+- 使用图表和图标来表示概念
+- 将数据/数字可视化为图表
+- 使用项目符号，突出关键指标
+- 保持背景干净简洁
+
+参考图：重新绘制以匹配视觉风格和配色方案。保留原始结构和关键信息，但让它们与海报设计无缝融合。
+
+---
+Content:
+## A Statistical Hypothesis Testing Framework for Data Misappropriation Detection in Large Language Models
+
+Yinpeng Cai (Peking University), Lexin Li (University of California at Berkeley), Linjun Zhang (Rutgers University). This research addresses the critical challenge of detecting whether proprietary data has been misappropriated or used without authorization to train Large Language Models (LLMs).
+
+---
+
+## Background and Motivation
+
+The rapid advancement of Large Language Models (LLMs) depends heavily on massive datasets. However, this has led to significant concerns regarding data misappropriation, where proprietary or copyrighted data is used for training without consent. Existing detection methods, such as membership inference attacks (MIA) and dataset lineage tracing, often lack a rigorous statistical foundation, leading to high false-positive rates or insufficient power. Current limitations include: 1) The 'black-box' nature of LLMs makes it difficult to verify training sets. 2) Traditional metrics like perplexity are sensitive to distribution shifts and prompt engineering. 3) There is a lack of a formal hypothesis testing framework that can provide provable guarantees on the Type-I error (false discovery) while maintaining high power in detecting data leakage across diverse text domains.
+
+---
+
+## Methodology: Statistical Hypothesis Testing Framework
+
+The proposed framework formulates data misappropriation detection as a formal hypothesis test. Let \( D_{test} \) be the suspicious dataset and \( \mathcal{M} \) be the target LLM. The null hypothesis \( H_0 \) posits that \( D_{test} \) was not used in training \( \mathcal{M} \), while the alternative \( H_1 \) suggests it was. The framework utilizes a log-likelihood based statistic: \( S = rac{1}{n} \sum_{i=1}^n \log P_{\mathcal{M}}(x_i | x_{<i}) \), where \( x_i \) are tokens in the test set. To account for the inherent complexity of different text samples, the method employs a 'Reference Model' \( \mathcal{M}_{ref} \) to normalize the scores. The test statistic is defined as: \( T = rac{1}{n} \sum_{i=1}^n \log rac{P_{\mathcal{M}}(x_i)}{P_{\mathcal{M}_{ref}}(x_i)} \). If \( T \) exceeds a threshold determined by the distribution under \( H_0 \), the null hypothesis is rejected. The framework includes a calibration step using a proxy non-member dataset to estimate the null distribution's variance and mean, ensuring the p-values are uniformly distributed under \( H_0 \). This allows for controlling the False Positive Rate (FPR) at a pre-specified level \( \alpha \).
+
+---
+
+## Experimental Results and Evaluation
+
+The framework was evaluated using multiple LLMs, including LLaMA-7B, OPT-6.7B, and GPT-2, across various datasets like Wikitext-103, Enron Emails, and CodeSearchNet. The experiments focused on the Power of the test (True Positive Rate) at a fixed Type-I error rate (FPR = 0.05). For LLaMA-7B, the framework achieved a detection power of 0.94 on Wikitext and 0.88 on specialized code datasets, significantly outperforming baseline MIA methods which hovered around 0.65-0.72. Sensitivity analysis showed that even with partial misappropriation (where only 10% of the proprietary data is used), the framework maintains a power above 0.75. Ablation studies on the reference model selection indicated that using a model from the same family but smaller scale (e.g., LLaMA-1.3B as a reference for LLaMA-7B) provides the most stable calibration. The results also demonstrate robustness against common obfuscation techniques like synonym substitution and paraphrasing, where the detection power remained above 0.82.
+
+---
+
+## Conclusion and Key Contributions
+
+The paper provides a rigorous mathematical foundation for detecting data misappropriation in LLMs. Key contributions include: 1) The introduction of a formal statistical hypothesis testing framework that allows for controlled Type-I error rates. 2) The development of a reference-normalized test statistic that effectively mitigates the impact of text intrinsic difficulty. 3) Extensive empirical validation showing that the method is highly effective even under low-data regimes and adversarial settings. 4) The framework is model-agnostic and can be applied to any LLM with likelihood access, providing a practical tool for IP protection in the AI era. The findings suggest that statistical signatures of training data remain detectable even after extensive fine-tuning or alignment processes.
+生成图片中所有文字使用清晰易读的字体，确保所有中文字体印刷级清晰。...
+[INFO] 2026-01-08 14:35:30.452 Calling Doubao image generation (attempt 1/3)...
+[INFO] 2026-01-08 14:35:30.452   Model: doubao-seedream-4-5-251128, Size: 2K
+[INFO] 2026-01-08 14:35:30.454   Prompt length: 4937 chars
+[INFO] 2026-01-08 14:36:04.323 Downloading image from URL: https://ark-content-generation-v2-cn-beijing.tos-cn-beijing.volces.com/doubao-se...
+[INFO] 2026-01-08 14:36:05.133 Image generation successful (Doubao, URL, 992259 bytes)
+[INFO] 2026-01-08 14:36:05.139   [1/1] Saved: poster.png
+[INFO] 2026-01-08 14:36:05.139   Generated 1 images
+[INFO] 2026-01-08 14:36:05.140 
+[INFO] 2026-01-08 14:36:05.140 Output: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\outputs\2501.02441\paper\fast\poster_academic_dense\20260108_143528
+[INFO] 2026-01-08 14:36:05.143 
+[INFO] 2026-01-08 14:36:05.143 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 14:36:05.143 SUMMARY
+[INFO] 2026-01-08 14:36:05.144 ────────────────────────────────────────────────────────────
+[INFO] 2026-01-08 14:36:05.144   [✓] rag: completed
+[INFO] 2026-01-08 14:36:05.145   [✓] summary: completed
+[INFO] 2026-01-08 14:36:05.145   [✓] plan: completed
+[INFO] 2026-01-08 14:36:05.146   [✓] generate: completed
+[INFO] 2026-01-08 14:36:12.528 [f28a8d51-baa7-49e3-901e-119f7da7c372] 生成完成，输出文件: 1 个
+[INFO] 2026-01-08 14:36:12.528 [f28a8d51-baa7-49e3-901e-119f7da7c372] 生成完成，输出文件: 1 个
+[INFO] 2026-01-08 14:36:14.527 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始上传文件...
+[INFO] 2026-01-08 14:36:14.527 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始上传文件...
+[INFO] 2026-01-08 14:36:14.908 文件已上传: kb-poster-system/arxiv/2501.02441/poster.png
+[INFO] 2026-01-08 14:36:17.410 [f28a8d51-baa7-49e3-901e-119f7da7c372] 文件上传完成: kb-poster-system/arxiv/2501.02441/poster.png
+[INFO] 2026-01-08 14:36:17.410 [f28a8d51-baa7-49e3-901e-119f7da7c372] 文件上传完成: kb-poster-system/arxiv/2501.02441/poster.png
+[INFO] 2026-01-08 14:36:19.279 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始更新用户数据...
+[INFO] 2026-01-08 14:36:19.279 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始更新用户数据...
+[INFO] 2026-01-08 14:36:19.291 批量更新完成: f28a8d51-baa7-49e3-901e-119f7da7c372, update_system=True
+[INFO] 2026-01-08 14:36:19.291 批量更新完成: f28a8d51-baa7-49e3-901e-119f7da7c372, update_system=True
+[INFO] 2026-01-08 14:36:20.301 [f28a8d51-baa7-49e3-901e-119f7da7c372] 用户数据更新完成
+[INFO] 2026-01-08 14:36:20.301 [f28a8d51-baa7-49e3-901e-119f7da7c372] 用户数据更新完成
+[INFO] 2026-01-08 14:36:21.024 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始更新系统数据...
+[INFO] 2026-01-08 14:36:21.024 [f28a8d51-baa7-49e3-901e-119f7da7c372] 开始更新系统数据...
+[INFO] 2026-01-08 14:36:21.644 [f28a8d51-baa7-49e3-901e-119f7da7c372] 系统数据更新完成, update_system=True
+[INFO] 2026-01-08 14:36:21.644 [f28a8d51-baa7-49e3-901e-119f7da7c372] 系统数据更新完成, update_system=True
+[INFO] 2026-01-08 14:36:21.647 任务执行完成: f28a8d51-baa7-49e3-901e-119f7da7c372, status=success
+[INFO] 2026-01-08 14:36:21.647 任务执行完成: f28a8d51-baa7-49e3-901e-119f7da7c372, status=success
+[INFO] 2026-01-08 14:36:21.648 任务成功: f28a8d51-baa7-49e3-901e-119f7da7c372
+[INFO] 2026-01-08 14:36:21.648 任务成功: f28a8d51-baa7-49e3-901e-119f7da7c372
+[INFO] 2026-01-08 14:36:23.689 运行中任务数减少: 0
+[INFO] 2026-01-08 14:36:23.692 已清理临时文件: f28a8d51-baa7-49e3-901e-119f7da7c372
+[INFO] 2026-01-08 14:36:23.692 已清理临时文件: f28a8d51-baa7-49e3-901e-119f7da7c372
+[INFO] 2026-01-08 14:36:23.697 Task celery_app.tasks.generate_slides_task[f28a8d51-baa7-49e3-901e-119f7da7c372] succeeded in 67.65599999995902s: {'result_id': 'f28a8d51-baa7-49e3-901e-119f7da7c372', 'status': 'success', 'file_path': 'kb-poster-system/arxiv/2501.02441/poster.png', 'images': None, 'error_message': None}

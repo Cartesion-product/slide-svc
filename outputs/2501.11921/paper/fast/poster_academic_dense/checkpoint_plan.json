@@ -1,0 +1,85 @@
+{
+  "plan": {
+    "output_type": "poster",
+    "sections": [
+      {
+        "id": "poster_header",
+        "title": "Goal-oriented Transmission Scheduling: Structure-guided DRL with a Unified Dual On-policy and Off-policy Approach",
+        "type": "content",
+        "content": "Authors: Jiazheng Chen, Wanchun Liu*. This research addresses the critical challenge of efficient transmission scheduling in large-scale goal-oriented communication systems, specifically focusing on remote state estimation where Age of Information (AoI) directly impacts system performance.",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "poster_motivation",
+        "title": "Motivation and Problem Statement",
+        "type": "content",
+        "content": "The study focuses on a multi-device multi-channel wireless system where \\( N \\) devices share \\( M \\) fading channels (\\( M < N \\)). The core objective is to find an optimal scheduling policy \\( \\pi \\) that minimizes the long-term expected total cost, such as the Mean Square Error (MSE) in remote state estimation. Conventional methods face a 'curse of dimensionality'; for instance, a 10-device 5-channel system generates 30,240 possible actions. Existing DRL approaches suffer from a trade-off: Off-policy algorithms (DQN, DDPG) are sample-efficient but unstable in large-scale systems (failing at 40 devices), while On-policy algorithms (PPO) are stable but sample-inefficient and prone to local optima. There is a significant research gap in integrating the mathematical structural properties of communication problems, such as the monotonicity and asymptotic convexity of the value function, into the DRL training process.",
+        "tables": [],
+        "figures": []
+      },
+      {
+        "id": "poster_methodology",
+        "title": "SUDO-DRL Framework and Methodology",
+        "type": "content",
+        "content": "SUDO-DRL (Structure-guided Unified Dual On-off policy DRL) bridges the gap between stability and efficiency. It derives theoretical properties of the optimal policy—Monotonicity (V-function increases with AoI), Asymptotic Convexity (V-function relative to AoI), and Asymptotic Greedy Structure (mandatory scheduling for high AoI devices). The framework uses a Unified Dual Loss Function: \\( L_{\\mathrm{SUDO}}(\\boldsymbol{\nu}) = L_{\\mathrm{On}}(\\boldsymbol{\nu}) + \\beta_1 L_{\\mathrm{Off}}(\\boldsymbol{\nu}) \\), combining PPO’s clipping loss with SAC’s entropy-regularized off-policy updates. Structural violations are penalized via terms like \\( \\hat{V}_{\\mathrm{AoI}} = \\max(0, v(\\mathbf{s}; \\boldsymbol{\nu}) - v(\\hat{\\mathbf{s}}_{(n)}; \\boldsymbol{\nu})) \\). A structure-guided replay buffer only stores trajectories exceeding historical average scores (CM, CC, AM scores), and a pre-training phase utilizes the 'asymptotic greedy' theorem to accelerate convergence by 40%.",
+        "tables": [
+          {
+            "table_id": "Doc Table 1",
+            "extract": "<table><tr><th>Hyperparameter</th><th>Value</th></tr><tr><td>Discount factor, γ</td><td>0.99</td></tr><tr><td>Clipping parameter, ε</td><td>0.2</td></tr><tr><td>Unified loss weight, β1, β2</td><td>0.9</td></tr><tr><td>Batch size, B1, B2</td><td>128</td></tr><tr><td>Replay buffer, R</td><td>200</td></tr></table>",
+            "focus": "Algorithm configuration and training parameters"
+          }
+        ],
+        "figures": [
+          {
+            "figure_id": "Framework Architecture",
+            "focus": "Integration of theoretical structural properties into the dual on-off policy DRL loop"
+          }
+        ]
+      },
+      {
+        "id": "poster_results",
+        "title": "Experimental Results and Performance Evaluation",
+        "type": "content",
+        "content": "Evaluated across scales from 10 to 40 devices, SUDO-DRL consistently outperforms baselines. In small-scale setups (10,5), it achieves a cost of 85.52 compared to PPO's 119.63. Crucially, in large-scale scenarios (40 devices, 20 channels), all off-policy benchmarks (DDPG, SE-DDPG) fail to converge, while SUDO-DRL achieves an MSE cost of 689.81, a ~29% improvement over PPO (971.35). Structural scores (CM, CC, AM) reach 100 within 200 episodes, proving the agent learns the mathematically optimal structure. Ablation studies show that full SUDO-DRL reduces convergence time by 40% compared to versions without pre-training, starting from a significantly lower initial cost (~800 vs ~1000).",
+        "tables": [
+          {
+            "table_id": "Doc Table 2",
+            "extract": "<table><tr><th>Scale (N, M)</th><th>PPO</th><th>SUDO-DRL</th><th>Improvement</th></tr><tr><td>(10, 5)</td><td>119.63</td><td>85.52</td><td>~28.5%</td></tr><tr><td>(20, 10)</td><td>569.96</td><td>370.63</td><td>~35%</td></tr><tr><td>(30, 15)</td><td>900.71</td><td>518.03</td><td>~42.5%</td></tr><tr><td>(40, 20)</td><td>1291.54</td><td>994.80</td><td>~23%</td></tr></table>",
+            "focus": "Comparison of Average Sum MSE Cost across different system scales"
+          }
+        ],
+        "figures": []
+      },
+      {
+        "id": "poster_conclusion",
+        "title": "Key Contributions and Conclusion",
+        "type": "content",
+        "content": "The study provides four major contributions: 1) First theoretical proof of the asymptotic convexity of the value function regarding AoI in transmission scheduling. 2) Development of the SUDO-DRL framework that unifies on-policy stability with off-policy efficiency. 3) A novel structure-guided replay buffer management system that prioritizes theoretically-consistent data. 4) Demonstration of superior scalability, maintaining high performance in environments with 40 devices and 20 channels where traditional DRL fails. This work effectively bridges the gap between mathematical optimization theory and deep reinforcement learning for complex communication networks.",
+        "tables": [],
+        "figures": []
+      }
+    ],
+    "metadata": {
+      "density": "dense",
+      "page_range": null
+    }
+  },
+  "origin": {
+    "tables": [
+      {
+        "id": "Doc Table 1",
+        "caption": "",
+        "html": "<table><tr><th>Hyperparameters of SUDO-DRL and benchmarks</th><th>Value</th></tr><tr><td>Critic NN learning rate</td><td>0.001</td></tr><tr><td>Actor NN learning rate</td><td>0.0001</td></tr><tr><td>Decay rate of learning rate</td><td>0.001</td></tr><tr><td>Discount factor, <b>γ</b></td><td>0.99</td></tr><tr><td>GAE parameter, <b>λ</b></td><td>0.99</td></tr><tr><td>Clipping parameter, <b>ε</b></td><td>0.2</td></tr><tr><td>Policy entropy loss weight, <b>ω</b></td><td>0.01</td></tr><tr><td>Decay rate of sampling priority, <b>ρ</b></td><td>0.95</td></tr><tr><td>Unified on-off policy loss function hyperparameter, <b>β</b><sub>1</sub>, <b>β</b><sub>2</sub></td><td>0.9</td></tr><tr><td>On-policy and off-policy batch size, <b>B</b><sub>1</sub>, <b>B</b><sub>2</sub></td><td>128</td></tr><tr><td>Number of sampled states for score scheme, <b>K</b></td><td>50</td></tr><tr><td>Number of tested AoI and channel state, <b>Xi</b></td><td>4</td></tr><tr><td>Number of past trajectories for average score computing, <b>bar</b></td><td>50</td></tr><tr><td>Time horizon of each episode, <b>T</b></td><td>128</td></tr><tr><td>Size of replay buffer, <b>R</b></td><td>200</td></tr><tr><td>Number of episodes for pre-training, <b>I</b><sub>1</sub></td><td>10 × <b>N</b></td></tr><tr><td>Total number of episodes for training, <b>I</b></td><td>10000</td></tr><tr><td>Optimizer during training</td><td>Adam</td></tr></table>"
+      },
+      {
+        "id": "Doc Table 2",
+        "caption": "",
+        "html": "<table><tr><th>System Scale (N, M)</th><th>Para.</th><th>DDPG</th><th>SE-DDPG [21]</th><th>MRI-DDPG [22]</th><th>PPO</th><th>SUDO-DRL</th></tr><tr><td>(10, 5)</td><td>1</td><td>89.26</td><td>77.14</td><td>84.00</td><td>119.63</td><td><b>85.52</b></td></tr><tr><td></td><td>2</td><td>98.87</td><td>87.30</td><td>90.28</td><td>123.01</td><td><b>95.82</b></td></tr><tr><td></td><td>3</td><td>—</td><td>106.60</td><td>119.55</td><td>195.37</td><td><b>121.31</b></td></tr><tr><td></td><td>4</td><td>83.12</td><td>78.21</td><td>80.88</td><td>120.93</td><td><b>80.68</b></td></tr><tr><td>(20, 10)</td><td>5</td><td>—</td><td>357.14</td><td>369.14</td><td>569.96</td><td><b>370.63</b></td></tr><tr><td></td><td>6</td><td>—</td><td>—</td><td>445.87</td><td>584.37</td><td><b>426.29</b></td></tr><tr><td></td><td>7</td><td>—</td><td>407.20</td><td>441.73</td><td>731.94</td><td><b>417.90</b></td></tr><tr><td></td><td>8</td><td>—</td><td>290.72</td><td>307.94</td><td>376.16</td><td><b>308.91</b></td></tr><tr><td>(30, 15)</td><td>9</td><td>—</td><td>—</td><td>—</td><td>805.45</td><td><b>519.78</b></td></tr><tr><td></td><td>10</td><td>—</td><td>—</td><td>—</td><td>739.97</td><td><b>575.34</b></td></tr><tr><td></td><td>11</td><td>—</td><td>—</td><td>—</td><td>900.71</td><td><b>518.03</b></td></tr><tr><td></td><td>12</td><td>—</td><td>—</td><td>—</td><td>901.42</td><td><b>551.97</b></td></tr><tr><td>(40, 20)</td><td>13</td><td>—</td><td>—</td><td>—</td><td>1057.05</td><td><b>719.45</b></td></tr><tr><td></td><td>14</td><td>—</td><td>—</td><td>—</td><td>971.35</td><td><b>689.81</b></td></tr><tr><td></td><td>15</td><td>—</td><td>—</td><td>—</td><td>1291.54</td><td><b>994.80</b></td></tr><tr><td></td><td>16</td><td>—</td><td>—</td><td>—</td><td>1012.20</td><td><b>771.91</b></td></tr></table>"
+      }
+    ],
+    "figures": [],
+    "base_path": "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\data\\temp\\1b9a609e-fce7-49de-a3fc-cb828a2de68b"
+  },
+  "content_type": "paper"
+}

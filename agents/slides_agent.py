@@ -2,7 +2,7 @@
 
 基于 LangGraph 工作流，实现 Poster/Slides 的生成：
 1. 参数校验节点 - 验证参数并更新任务状态为 running
-2. 文件下载节点 - 从 MinIO 下载 MD 文件到本地
+2. 获取文档内容节点 - 从 SV_KNOWLEDGE_DB 查询 MD 内容并写入本地
 3. 接口调用节点 - 直接调用 Paper2SlidesService 生成管道
 4. 文件上传节点 - 将生成的文件上传至 MinIO
 5. 用户数据更新节点 - 更新 user_paper_agent_result 表
@@ -30,6 +30,7 @@ from services.paper2slides_service import get_paper2slides_service
 from repositories.user_paper_repo import get_user_paper_repo
 from repositories.system_paper_repo import get_system_paper_repo
 from utilities.log_manager import get_celery_logger
+from db.mongo import get_mongo_client
 
 # 使用 LogManager 的 Celery logger
 logger = get_celery_logger()
@@ -45,11 +46,9 @@ class SlidesAgentState(TypedDict):
     result_id: str
     paper_id: str
     source: str
-    source_path: str
     paper_type: str
     agent_type: str
     user_id: str
-    bucket: str
     style: str
     language: str
     density: str
@@ -89,7 +88,7 @@ class SlidesAgent:
 
         # 添加节点
         workflow.add_node("validate_params", self.validate_params_node)
-        workflow.add_node("download_file", self.download_file_node)
+        workflow.add_node("get_md_content", self.get_md_content_node) # 变更名称
         workflow.add_node("call_api", self.call_api_node)
         workflow.add_node("upload_files", self.upload_files_node)
         workflow.add_node("update_user_data", self.update_user_data_node)
@@ -99,8 +98,8 @@ class SlidesAgent:
         workflow.set_entry_point("validate_params")
 
         # 添加边: 线性流程
-        workflow.add_edge("validate_params", "download_file")
-        workflow.add_edge("download_file", "call_api")
+        workflow.add_edge("validate_params", "get_md_content") # 变更
+        workflow.add_edge("get_md_content", "call_api")        # 变更
         workflow.add_edge("call_api", "upload_files")
         workflow.add_edge("upload_files", "update_user_data")
         workflow.add_edge("update_user_data", "update_system_data")
@@ -162,67 +161,48 @@ class SlidesAgent:
 
         return state
 
-    def download_file_node(self, state: SlidesAgentState) -> SlidesAgentState:
-        """文件下载节点
+    def get_md_content_node(self, state: SlidesAgentState) -> SlidesAgentState:
+        """获取文档内容节点 (原 download_file_node)
 
-        从 MinIO 下载 MD 文件到本地 data/temp 目录
+        从 SV_KNOWLEDGE_DB 查询 system_paper_original_content 获取 MD 内容，并写入临时文件
         """
-        state["current_step"] = "download_file"
-        logger.info(f"[{state['result_id']}] 开始下载文件...")
+        state["current_step"] = "get_md_content"
+        logger.info(f"[{state['result_id']}] 开始获取MD文档内容...")
 
         try:
             paper_id = state["paper_id"]
-            source_path = state["source_path"]
+            source = state["source"]
 
-            # 构建本地保存路径
+            # 1. 连接 Mongo 并查询内容
+            mongo_client = get_mongo_client()
+            collection = mongo_client.system_paper_content_collection
+
+            logger.info(f"[{state['result_id']}] 查询系统论文: paper_id={paper_id}, source={source}")
+
+            # 假设 source 对应 content 表的 source 字段
+            doc = collection.find_one({"paper_id": paper_id, "source": source})
+
+            if not doc:
+                raise ValueError(f"未找到论文内容: paper_id={paper_id}, source={source}")
+
+            content = doc.get("content")
+            if not content:
+                raise ValueError(f"论文内容为空: paper_id={paper_id}")
+
+            # 2. 写入本地临时文件
             local_dir = TEMP_DIR / state["result_id"]
             local_dir.mkdir(parents=True, exist_ok=True)
             local_md_path = local_dir / f"{paper_id}.md"
 
-            # --- 路径解析逻辑优化 ---
-            source_path = source_path.lstrip("/")
-
-            # 1. 获取默认 Bucket，并增加防御性检查
-            # 如果 state 中的 bucket 看起来不像有效的 bucket (不以 kb- 开头)，则强制使用默认值
-            input_bucket = state.get("bucket", "kb-paper-parsed")
-            default_bucket = input_bucket if str(input_bucket).startswith("kb-") else "kb-paper-parsed"
-
-            bucket_name = default_bucket
-            object_key = source_path
-
-            if "/" in source_path:
-                first_segment, rest = source_path.split("/", 1)
-                # 2. 检查路径第一段是否为 Bucket
-                if first_segment.startswith("kb-"):
-                    bucket_name = first_segment
-                    object_key = rest
-                # 否则保持默认 bucket_name，整个 source_path 都是 object_key
-
-            # 构建完整的 object_name
-            object_name = f"{object_key}/{paper_id}.md" if object_key else f"{paper_id}.md"
-
-            logger.info(f"[{state['result_id']}] MinIO 下载参数 - Bucket: {bucket_name}, Object: {object_name}")
-
-            # --- 解决 S3Error frozen 问题的关键修改 ---
-            try:
-                self._minio_service.download_file(
-                    bucket_name=bucket_name,
-                    object_name=object_name,
-                    local_path=str(local_md_path)
-                )
-            except S3Error as s3_err:
-                # S3Error 是 frozen 的，LangGraph 无法对其 add_note，会导致崩溃。
-                # 我们将其包装成普通 Exception 抛出。
-                error_details = f"S3 Error: {s3_err.message} (Code: {s3_err.code}, Bucket: {bucket_name})"
-                raise Exception(error_details) from s3_err
+            with open(local_md_path, "w", encoding="utf-8") as f:
+                f.write(content)
 
             state["local_md_path"] = str(local_md_path)
-            logger.info(f"[{state['result_id']}] 文件下载完成: {local_md_path}")
+            logger.info(f"[{state['result_id']}] MD内容已写入临时文件: {local_md_path}")
 
         except Exception as e:
-            # 这里捕获的是转换后的普通 Exception，LangGraph 可以正常处理
             error_msg = str(e)
-            logger.error(f"[{state['result_id']}] 下载处理失败: {error_msg}")
+            logger.error(f"[{state['result_id']}] 获取文档内容失败: {error_msg}")
             state["status"] = "failed"
             state["error_message"] = error_msg
 
@@ -314,7 +294,7 @@ class SlidesAgent:
 
         except Exception as e:
             error_msg = str(e)
-            logger.error(f"[{state['result_id']}] 参数校验失败: {error_msg}")
+            logger.error(f"[{state['result_id']}] 生成失败: {error_msg}")
             state["status"] = "failed"
             state["error_message"] = error_msg
             self._mark_task_failed(
@@ -548,11 +528,9 @@ class SlidesAgent:
         result_id: str,
         paper_id: str,
         source: str,
-        source_path: str,
         paper_type: str,
         agent_type: str,
         user_id: str,
-        bucket: str = "kb-paper-parsed",
         style: str = "doraemon",
         language: str = "ZH",
         density: str = "medium",
@@ -564,11 +542,9 @@ class SlidesAgent:
             result_id: 任务ID
             paper_id: 论文ID
             source: 论文来源
-            source_path: MinIO文件路径（包括桶名）
             paper_type: 论文类型
             agent_type: 任务类型
             user_id: 用户ID
-            bucket: 论文解析结果桶名
             style: 风格
             language: 语言
             density: 密度
@@ -582,11 +558,9 @@ class SlidesAgent:
             "result_id": result_id,
             "paper_id": paper_id,
             "source": source,
-            "source_path": source_path,
             "paper_type": paper_type,
             "agent_type": agent_type,
             "user_id": user_id,
-            "bucket": bucket,
             "style": style,
             "language": language,
             "density": density,

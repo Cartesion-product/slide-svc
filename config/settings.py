@@ -66,6 +66,12 @@ class Settings:
         return os.getenv('SLIDES_MONGO_DB', 'slide_svc')
 
     @property
+    def knowledge_db_name(self) -> str:
+        """知识库数据库名 (Source Content)"""
+        # 默认为 SV_KNOWLEDGE_DB
+        return os.getenv('KNOWLEDGE_DB_NAME', 'SV_KNOWLEDGE_DB')
+
+    @property
     def system_paper_collection(self) -> str:
         """系统论文结果集合名"""
         return os.getenv('SLIDES_SYSTEM_PAPER_COLLECTION', 'system_paper_agent_result')
@@ -74,6 +80,11 @@ class Settings:
     def user_paper_collection(self) -> str:
         """用户论文结果集合名"""
         return os.getenv('SLIDES_USER_PAPER_COLLECTION', 'user_paper_agent_result')
+
+    @property
+    def system_paper_content_collection(self) -> str:
+        """系统论文原始内容表名 (Source Content)"""
+        return os.getenv('SYSTEM_PAPER_CONTENT_COLLECTION', 'system_paper_original_content')
 
     # ============ Celery 配置 ============
 

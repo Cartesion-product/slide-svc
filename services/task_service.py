@@ -48,12 +48,10 @@ class TaskService:
         self,
         paper_id: str,
         source: str,
-        source_path: str,
         paper_type: str,
         agent_type: str,
         user_id: str,
         title: Optional[str] = None,
-        bucket: str = "kb-paper-parsed",
         style: str = "doraemon",
         language: str = "ZH",
         density: str = "medium"
@@ -63,23 +61,16 @@ class TaskService:
         业务逻辑（根据接口设计）:
         1. 检查任务队列容量
         2. 检查系统论文是否有默认结果
-           - 无记录：创建系统空记录，设置update_system=True
-           - 有记录且有file_path：
-             * 用户第一次创建：直接使用默认结果
-             * 用户之前创建过：重新生成（update_system=False）
-           - 有记录但无file_path：重新生成（update_system=False）
-        3. 创建任务记录，状态为 waiting
+        3. 创建任务记录
         4. 根据队列状态决定执行策略
 
         Args:
             paper_id: 论文ID
             source: 论文来源
-            source_path: MinIO文件路径（包括桶名）
             paper_type: 论文类型 (system/user)
             agent_type: 任务类型 (poster/slides)
             user_id: 用户ID
             title: 任务标题（可选）
-            bucket: 论文解析结果桶名
             style: 风格
             language: 语言
             density: 密度
@@ -192,11 +183,9 @@ class TaskService:
                 result_id=result_id,
                 paper_id=paper_id,
                 source=source,
-                source_path=source_path,
                 paper_type=paper_type,
                 agent_type=agent_type,
                 user_id=user_id,
-                bucket=bucket,
                 style=style,
                 language=language,
                 density=density,
@@ -274,14 +263,13 @@ class TaskService:
             result_id=task.result_id,
             paper_id=task.paper_id,
             source=task.source,
-            source_path="",
             paper_type=task.paper_type,
             agent_type=task.agent_type,
             user_id=task.user_id,
-            bucket="kb-paper-parsed",
             style=task.style,
             language=task.language,
-            density=task.density
+            density=task.density,
+            update_system=task.update_system
         )
 
         logger.info(f"成功调度任务: {task_id}, update_system={task.update_system}")
@@ -291,11 +279,9 @@ class TaskService:
         result_id: str,
         paper_id: str,
         source: str,
-        source_path: str,
         paper_type: str,
         agent_type: str,
         user_id: str,
-        bucket: str,
         style: str,
         language: str,
         density: str,
@@ -307,11 +293,9 @@ class TaskService:
             result_id: 任务ID
             paper_id: 论文ID
             source: 论文来源
-            source_path: MinIO文件路径（包括桶名）
             paper_type: 论文类型
             agent_type: 任务类型
             user_id: 用户ID
-            bucket: 论文解析结果桶名
             style: 风格
             language: 语言
             density: 密度
@@ -325,11 +309,9 @@ class TaskService:
                 "result_id": result_id,
                 "paper_id": paper_id,
                 "source": source,
-                "source_path": source_path,
                 "paper_type": paper_type,
                 "agent_type": agent_type,
                 "user_id": user_id,
-                "bucket": bucket,
                 "style": style,
                 "language": language,
                 "density": density,

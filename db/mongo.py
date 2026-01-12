@@ -25,6 +25,7 @@ class MongoDBClient:
     _instance: Optional['MongoDBClient'] = None
     _client: Optional[MongoClient] = None
     _database: Optional[Database] = None
+    _knowledge_database: Optional[Database] = None
 
     def __new__(cls):
         if cls._instance is None:
@@ -48,8 +49,12 @@ class MongoDBClient:
             )
             # 验证连接
             self._client.admin.command('ping')
+
+            # 初始化数据库实例
             self._database = self._client[settings.mongo_database]
-            logger.info(f"MongoDB 连接成功: {settings.mongo_database}")
+            self._knowledge_database = self._client[settings.knowledge_db_name]
+
+            logger.info(f"MongoDB 连接成功. DB: {settings.mongo_database}, KnowledgeDB: {settings.knowledge_db_name}")
         except ConnectionFailure as e:
             logger.error(f"MongoDB 连接失败: {e}")
             raise
@@ -60,40 +65,47 @@ class MongoDBClient:
             self._client.close()
             self._client = None
             self._database = None
+            self._knowledge_database = None
             logger.info("MongoDB 连接已关闭")
 
     @property
     def database(self) -> Database:
-        """获取数据库实例"""
+        """获取主数据库实例 (SV_USER_DB)"""
         if self._database is None:
             self.connect()
         return self._database
 
+    @property
+    def knowledge_database(self) -> Database:
+        """获取知识库数据库实例 (SV_KNOWLEDGE_DB)"""
+        if self._knowledge_database is None:
+            self.connect()
+        return self._knowledge_database
+
     def get_collection(self, name: str) -> Collection:
-        """获取集合
-
-        Args:
-            name: 集合名称
-
-        Returns:
-            Collection: MongoDB 集合实例
-        """
+        """获取集合 (主数据库)"""
         return self.database[name]
 
     @property
     def system_paper_collection(self) -> Collection:
-        """系统论文结果集合"""
+        """系统论文结果集合 (主数据库)"""
         settings = get_settings()
         return self.get_collection(settings.system_paper_collection)
 
     @property
     def user_paper_collection(self) -> Collection:
-        """用户论文结果集合"""
+        """用户论文结果集合 (主数据库)"""
         settings = get_settings()
         return self.get_collection(settings.user_paper_collection)
 
+    @property
+    def system_paper_content_collection(self) -> Collection:
+        """系统论文原始内容集合 (知识库数据库)"""
+        settings = get_settings()
+        return self.knowledge_database[settings.system_paper_content_collection]
+
     def ensure_indexes(self) -> None:
-        """确保索引存在"""
+        """确保索引存在 (仅主数据库)"""
         settings = get_settings()
 
         # 系统论文结果集合索引
@@ -138,11 +150,7 @@ class MongoDBClient:
 
 @lru_cache()
 def get_mongo_client() -> MongoDBClient:
-    """获取 MongoDB 客户端单例
-
-    Returns:
-        MongoDBClient: MongoDB 客户端实例
-    """
+    """获取 MongoDB 客户端单例"""
     client = MongoDBClient()
     client.connect()
     return client

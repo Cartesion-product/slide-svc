@@ -1,0 +1,24 @@
+{
+  "config": {
+    "input_path": "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\sources\\uploads\\54b1bf70-5f9c-488c-a1c3-dad7b5dbee84\\2501.02441.md",
+    "pdf_paths": [
+      "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\sources\\uploads\\54b1bf70-5f9c-488c-a1c3-dad7b5dbee84\\2501.02441.md"
+    ],
+    "content_type": "paper",
+    "output_type": "poster",
+    "style": "academic",
+    "custom_style": null,
+    "slides_length": "medium",
+    "poster_density": "dense",
+    "fast_mode": true
+  },
+  "created_at": "2026-01-07T19:13:30.768618",
+  "stages": {
+    "rag": "completed",
+    "summary": "completed",
+    "plan": "completed",
+    "generate": "completed"
+  },
+  "session_id": "e196e360-6332-4870-b9e2-9c5654fdebf3",
+  "updated_at": "2026-01-08T14:36:05.141301"
+}

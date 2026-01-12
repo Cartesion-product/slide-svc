@@ -1,0 +1,1681 @@
+[2026-01-07 17:37:29,560: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 17:37:45,717: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[878f8e12-764b-49dc-87d3-18d5d8388f59] received
+[2026-01-07 17:37:47,853: INFO/MainProcess] 开始执行任务: 878f8e12-764b-49dc-87d3-18d5d8388f59, update_system=True
+[2026-01-07 17:37:48,001: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Attribute>
+[2026-01-07 17:37:48,007: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Attribute>
+[2026-01-07 17:37:48,013: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Attribute>
+[2026-01-07 17:37:48,018: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make._CountingAttr>
+[2026-01-07 17:37:48,023: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make._CountingAttr>
+[2026-01-07 17:37:48,029: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.ClassProps>
+[2026-01-07 17:37:48,033: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.ClassProps>
+[2026-01-07 17:37:48,038: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Factory>
+[2026-01-07 17:37:48,043: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Factory>
+[2026-01-07 17:37:48,048: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Factory>
+[2026-01-07 17:37:48,053: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Converter>
+[2026-01-07 17:37:48,058: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Converter>
+[2026-01-07 17:37:48,063: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Converter>
+[2026-01-07 17:37:48,069: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._make._AndValidator>
+[2026-01-07 17:37:48,076: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InstanceOfValidator>
+[2026-01-07 17:37:48,081: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MatchesReValidator>
+[2026-01-07 17:37:48,087: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OptionalValidator>
+[2026-01-07 17:37:48,092: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InValidator>
+[2026-01-07 17:37:48,097: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._IsCallableValidator>
+[2026-01-07 17:37:48,102: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepIterable>
+[2026-01-07 17:37:48,107: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepMapping>
+[2026-01-07 17:37:48,115: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NumberValidator>
+[2026-01-07 17:37:48,120: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MaxLengthValidator>
+[2026-01-07 17:37:48,126: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MinLengthValidator>
+[2026-01-07 17:37:48,131: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._SubclassOfValidator>
+[2026-01-07 17:37:48,137: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NotValidator>
+[2026-01-07 17:37:48,142: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OrValidator>
+[2026-01-07 17:37:48,154: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._version_info.VersionInfo>
+[2026-01-07 17:37:49,749: INFO/MainProcess] MongoDB 连接成功: slide_svc
+[2026-01-07 17:37:51,816: INFO/MainProcess] [878f8e12-764b-49dc-87d3-18d5d8388f59] 开始参数校验...
+[2026-01-07 17:37:51,825: INFO/MainProcess] [878f8e12-764b-49dc-87d3-18d5d8388f59] 任务状态已更新为 running
+[2026-01-07 17:37:52,435: INFO/MainProcess] [878f8e12-764b-49dc-87d3-18d5d8388f59] 开始下载文件...
+[2026-01-07 17:37:53,652: INFO/MainProcess] 初始化MinIO客户端: endpoint=http://10.0.62.206:59003, access_key=admin...
+[2026-01-07 17:37:53,844: ERROR/MainProcess] [878f8e12-764b-49dc-87d3-18d5d8388f59] 文件下载失败: path in endpoint is not allowed
+[2026-01-07 17:37:53,865: ERROR/MainProcess] 智能体执行失败: path in endpoint is not allowed
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 490, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+    ...<29 lines>...
+            chunks.append(chunk)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+    ...<13 lines>...
+            yield o
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "X:\Anaconda\Anaconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 180, in download_file_node
+    self._minio_service.download_file(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        bucket_name=bucket_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        object_name=object_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        local_path=str(local_md_path)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 144, in download_file
+    client = self._get_client()
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 39, in _get_client
+    self._client = Minio(
+                   ~~~~~^
+        settings.minio_endpoint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        secure=False
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 156, in __init__
+    self._base_url = BaseURL(
+                     ~~~~~~~^
+        ("https://" if secure else "http://") + endpoint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        region,
+        ^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\helpers.py", line 553, in __init__
+    url = _parse_url(endpoint)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\helpers.py", line 514, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+During task with name 'download_file' and id '671f2e1e-cd71-26cb-86ff-e19d68733bc7'
+
+[2026-01-07 17:37:53,865: ERROR/MainProcess] 任务失败: 878f8e12-764b-49dc-87d3-18d5d8388f59, 错误: path in endpoint is not allowed
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: path in endpoint is not allowed
+[2026-01-07 17:37:55,897: INFO/MainProcess] 运行中任务数减少: 1
+[2026-01-07 17:37:55,901: INFO/MainProcess] 已清理临时文件: 878f8e12-764b-49dc-87d3-18d5d8388f59
+[2026-01-07 17:37:55,904: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[878f8e12-764b-49dc-87d3-18d5d8388f59] raised unexpected: Exception('path in endpoint is not allowed')
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ~~~^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: path in endpoint is not allowed
+[2026-01-07 17:40:07,083: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 17:40:11,135: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 17:40:18,309: INFO/MainProcess] mingle: all alone
+[2026-01-07 17:40:18,611: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[eab24a97-eb15-4eef-9541-e51621de516f] received
+[2026-01-07 17:40:18,624: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    tasks, accept, hostname = _loc
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    tasks, accept, hostname = _loc
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-07 17:40:26,484: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 17:49:00,308: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 17:49:02,363: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 17:49:02,364: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 17:49:06,438: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 17:49:13,620: INFO/MainProcess] mingle: all alone
+[2026-01-07 17:49:21,814: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 17:50:40,329: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[110bc440-a631-45e6-a19c-7fb6c6c3fa71] received
+[2026-01-07 17:50:42,416: INFO/MainProcess] 开始执行任务: 110bc440-a631-45e6-a19c-7fb6c6c3fa71, update_system=True
+[2026-01-07 17:50:42,542: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Attribute>
+[2026-01-07 17:50:42,547: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Attribute>
+[2026-01-07 17:50:42,552: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Attribute>
+[2026-01-07 17:50:42,557: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make._CountingAttr>
+[2026-01-07 17:50:42,562: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make._CountingAttr>
+[2026-01-07 17:50:42,571: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.ClassProps>
+[2026-01-07 17:50:42,575: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.ClassProps>
+[2026-01-07 17:50:42,580: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Factory>
+[2026-01-07 17:50:42,585: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Factory>
+[2026-01-07 17:50:42,590: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Factory>
+[2026-01-07 17:50:42,595: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Converter>
+[2026-01-07 17:50:42,599: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Converter>
+[2026-01-07 17:50:42,605: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Converter>
+[2026-01-07 17:50:42,611: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._make._AndValidator>
+[2026-01-07 17:50:42,618: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InstanceOfValidator>
+[2026-01-07 17:50:42,624: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MatchesReValidator>
+[2026-01-07 17:50:42,628: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OptionalValidator>
+[2026-01-07 17:50:42,634: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InValidator>
+[2026-01-07 17:50:42,639: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._IsCallableValidator>
+[2026-01-07 17:50:42,644: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepIterable>
+[2026-01-07 17:50:42,651: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepMapping>
+[2026-01-07 17:50:42,659: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NumberValidator>
+[2026-01-07 17:50:42,665: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MaxLengthValidator>
+[2026-01-07 17:50:42,670: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MinLengthValidator>
+[2026-01-07 17:50:42,676: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._SubclassOfValidator>
+[2026-01-07 17:50:42,686: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NotValidator>
+[2026-01-07 17:50:42,692: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OrValidator>
+[2026-01-07 17:50:42,704: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._version_info.VersionInfo>
+[2026-01-07 17:50:44,232: INFO/MainProcess] MongoDB 连接成功: slide_svc
+[2026-01-07 17:50:48,333: INFO/MainProcess] [110bc440-a631-45e6-a19c-7fb6c6c3fa71] 开始参数校验...
+[2026-01-07 17:50:48,338: INFO/MainProcess] [110bc440-a631-45e6-a19c-7fb6c6c3fa71] 任务状态已更新为 running
+[2026-01-07 17:50:49,197: INFO/MainProcess] [110bc440-a631-45e6-a19c-7fb6c6c3fa71] 开始下载文件...
+[2026-01-07 17:50:50,432: INFO/MainProcess] 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[2026-01-07 17:50:50,433: INFO/MainProcess] MinIO客户端初始化成功
+[2026-01-07 17:50:51,039: WARNING/MainProcess] Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)'))': /kb-paper-original-md?location=
+[2026-01-07 17:50:52,033: WARNING/MainProcess] Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)'))': /kb-paper-original-md?location=
+[2026-01-07 17:50:53,343: WARNING/MainProcess] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)'))': /kb-paper-original-md?location=
+[2026-01-07 17:50:55,449: WARNING/MainProcess] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)'))': /kb-paper-original-md?location=
+[2026-01-07 17:50:59,158: WARNING/MainProcess] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)'))': /kb-paper-original-md?location=
+[2026-01-07 17:51:11,751: ERROR/MainProcess] [110bc440-a631-45e6-a19c-7fb6c6c3fa71] 文件下载失败: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+[2026-01-07 17:51:11,782: ERROR/MainProcess] 智能体执行失败: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\util\ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\util\ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\Anaconda3\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "X:\Anaconda\Anaconda3\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "X:\Anaconda\Anaconda3\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 490, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+    ...<29 lines>...
+            chunks.append(chunk)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+    ...<13 lines>...
+            yield o
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "X:\Anaconda\Anaconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 180, in download_file_node
+    self._minio_service.download_file(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        bucket_name=bucket_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        object_name=object_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        local_path=str(local_md_path)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    client.fget_object(
+    ~~~~~~~~~~~~~~~~~~^
+        bucket_name=bucket_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        object_name=object_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        file_path=local_path
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+        bucket_name,
+    ...<3 lines>...
+        extra_headers=request_headers,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+        "HEAD",
+    ...<3 lines>...
+        query_params=query_params,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+        "GET",
+    ...<2 lines>...
+        query_params={"location": ""},
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\minio\api.py", line 306, in _url_open
+    response = self._http.urlopen(
+        method,
+    ...<3 lines>...
+        preload_content=preload_content,
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  [Previous line repeated 2 more times]
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+During task with name 'download_file' and id 'c08c06f2-2613-1411-7007-04c400d3138f'
+
+[2026-01-07 17:51:11,783: ERROR/MainProcess] 任务失败: 110bc440-a631-45e6-a19c-7fb6c6c3fa71, 错误: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+[2026-01-07 17:51:13,819: INFO/MainProcess] 运行中任务数减少: 1
+[2026-01-07 17:51:13,821: INFO/MainProcess] 已清理临时文件: 110bc440-a631-45e6-a19c-7fb6c6c3fa71
+[2026-01-07 17:51:13,830: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[110bc440-a631-45e6-a19c-7fb6c6c3fa71] raised unexpected: Exception("HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))")
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ~~~^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 760, in __protected_call__
+    return self.run(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: HTTPSConnectionPool(host='10.0.62.206', port=59003): Max retries exceeded with url: /kb-paper-original-md?location= (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)')))
+[2026-01-07 17:53:55,840: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 17:53:57,908: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 17:53:57,911: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 17:54:01,991: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 17:54:09,111: INFO/MainProcess] mingle: all alone
+[2026-01-07 17:54:17,343: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 17:54:23,274: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[2f5b1a95-8bf3-47e3-892d-0a86495a8210] received
+[2026-01-07 17:54:25,356: INFO/MainProcess] 开始执行任务: 2f5b1a95-8bf3-47e3-892d-0a86495a8210, update_system=True
+[2026-01-07 17:54:25,477: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Attribute>
+[2026-01-07 17:54:25,482: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Attribute>
+[2026-01-07 17:54:25,487: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Attribute>
+[2026-01-07 17:54:25,491: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make._CountingAttr>
+[2026-01-07 17:54:25,497: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make._CountingAttr>
+[2026-01-07 17:54:25,502: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.ClassProps>
+[2026-01-07 17:54:25,507: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.ClassProps>
+[2026-01-07 17:54:25,512: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Factory>
+[2026-01-07 17:54:25,517: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Factory>
+[2026-01-07 17:54:25,521: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Factory>
+[2026-01-07 17:54:25,528: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Converter>
+[2026-01-07 17:54:25,533: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Converter>
+[2026-01-07 17:54:25,537: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Converter>
+[2026-01-07 17:54:25,543: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._make._AndValidator>
+[2026-01-07 17:54:25,549: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InstanceOfValidator>
+[2026-01-07 17:54:25,554: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MatchesReValidator>
+[2026-01-07 17:54:25,560: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OptionalValidator>
+[2026-01-07 17:54:25,565: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InValidator>
+[2026-01-07 17:54:25,571: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._IsCallableValidator>
+[2026-01-07 17:54:25,577: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepIterable>
+[2026-01-07 17:54:25,582: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepMapping>
+[2026-01-07 17:54:25,588: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NumberValidator>
+[2026-01-07 17:54:25,594: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MaxLengthValidator>
+[2026-01-07 17:54:25,600: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MinLengthValidator>
+[2026-01-07 17:54:25,609: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._SubclassOfValidator>
+[2026-01-07 17:54:25,615: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NotValidator>
+[2026-01-07 17:54:25,621: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OrValidator>
+[2026-01-07 17:54:25,629: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._version_info.VersionInfo>
+[2026-01-07 17:54:27,092: INFO/MainProcess] MongoDB 连接成功: slide_svc
+[2026-01-07 17:54:29,728: INFO/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 开始参数校验...
+[2026-01-07 17:54:29,732: INFO/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 任务状态已更新为 running
+[2026-01-07 17:54:31,153: INFO/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 开始下载文件...
+[2026-01-07 17:54:41,002: INFO/MainProcess] 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[2026-01-07 17:54:41,003: INFO/MainProcess] MinIO客户端初始化成功
+[2026-01-07 17:54:41,246: INFO/MainProcess] 文件已下载: kb-paper-original-md/arxiv/2025/2501.02441.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\2f5b1a95-8bf3-47e3-892d-0a86495a8210\2501.02441.md
+[2026-01-07 17:55:07,415: INFO/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\2f5b1a95-8bf3-47e3-892d-0a86495a8210\2501.02441.md
+[2026-01-07 17:55:45,537: INFO/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 开始调用生成接口...
+[2026-01-07 18:55:44,682: INFO/MainProcess] HTTP Request: POST http://localhost:5003/api/chat "HTTP/1.1 404 Not Found"
+[2026-01-07 18:55:44,693: ERROR/MainProcess] [2f5b1a95-8bf3-47e3-892d-0a86495a8210] 接口调用失败: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 247, in call_api_node
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+[2026-01-07 18:55:44,720: ERROR/MainProcess] 智能体执行失败: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 490, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+    ...<29 lines>...
+            chunks.append(chunk)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+    ...<13 lines>...
+            yield o
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "X:\Anaconda\Anaconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 247, in call_api_node
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+During task with name 'call_api' and id '205e4278-6c03-f5c1-bcd5-4830a4c68db5'
+
+[2026-01-07 18:55:44,721: ERROR/MainProcess] 任务失败: 2f5b1a95-8bf3-47e3-892d-0a86495a8210, 错误: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+[2026-01-07 18:55:46,750: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-07 18:55:46,753: INFO/MainProcess] 已清理临时文件: 2f5b1a95-8bf3-47e3-892d-0a86495a8210
+[2026-01-07 18:55:46,773: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[2f5b1a95-8bf3-47e3-892d-0a86495a8210] raised unexpected: Exception("Client error '404 Not Found' for url 'http://localhost:5003/api/chat'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404")
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ~~~^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 760, in __protected_call__
+    return self.run(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: Client error '404 Not Found' for url 'http://localhost:5003/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+[2026-01-07 19:04:47,160: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:04:49,222: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:04:49,224: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:04:53,324: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:05:00,474: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:05:00,478: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[70b698ac-981c-4d03-ba47-e0ec5dd7364f] received
+[2026-01-07 19:05:00,524: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    tasks, accept, hostname = _loc
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    tasks, accept, hostname = _loc
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-07 19:05:08,655: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:11:29,133: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:11:31,200: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:11:31,201: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:11:33,242: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:11:40,378: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:11:50,574: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:12:04,133: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[af63e022-0cba-4b2b-9bde-dc1f243c4776] received
+[2026-01-07 19:12:06,327: INFO/MainProcess] 开始执行任务: af63e022-0cba-4b2b-9bde-dc1f243c4776, update_system=True
+[2026-01-07 19:12:06,530: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Attribute>
+[2026-01-07 19:12:06,534: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Attribute>
+[2026-01-07 19:12:06,539: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Attribute>
+[2026-01-07 19:12:06,545: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make._CountingAttr>
+[2026-01-07 19:12:06,549: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make._CountingAttr>
+[2026-01-07 19:12:06,555: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.ClassProps>
+[2026-01-07 19:12:06,560: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.ClassProps>
+[2026-01-07 19:12:06,565: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Factory>
+[2026-01-07 19:12:06,570: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Factory>
+[2026-01-07 19:12:06,576: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Factory>
+[2026-01-07 19:12:06,580: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __repr__ attr._make.Converter>
+[2026-01-07 19:12:06,585: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __eq__ attr._make.Converter>
+[2026-01-07 19:12:06,591: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated __hash__ attr._make.Converter>
+[2026-01-07 19:12:06,597: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._make._AndValidator>
+[2026-01-07 19:12:06,604: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InstanceOfValidator>
+[2026-01-07 19:12:06,609: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MatchesReValidator>
+[2026-01-07 19:12:06,614: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OptionalValidator>
+[2026-01-07 19:12:06,619: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._InValidator>
+[2026-01-07 19:12:06,624: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._IsCallableValidator>
+[2026-01-07 19:12:06,630: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepIterable>
+[2026-01-07 19:12:06,635: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._DeepMapping>
+[2026-01-07 19:12:06,640: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NumberValidator>
+[2026-01-07 19:12:06,645: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MaxLengthValidator>
+[2026-01-07 19:12:06,650: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._MinLengthValidator>
+[2026-01-07 19:12:06,655: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._SubclassOfValidator>
+[2026-01-07 19:12:06,662: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._NotValidator>
+[2026-01-07 19:12:06,667: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr.validators._OrValidator>
+[2026-01-07 19:12:06,675: WARNING/MainProcess] pydev debugger: Unable to find real location for: <attrs generated methods attr._version_info.VersionInfo>
+[2026-01-07 19:12:08,391: INFO/MainProcess] MongoDB 连接成功: slide_svc
+[2026-01-07 19:12:13,056: INFO/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 开始参数校验...
+[2026-01-07 19:12:13,060: INFO/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 任务状态已更新为 running
+[2026-01-07 19:12:34,928: INFO/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 开始下载文件...
+[2026-01-07 19:12:34,929: INFO/MainProcess] 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[2026-01-07 19:12:34,930: INFO/MainProcess] MinIO客户端初始化成功
+[2026-01-07 19:12:35,170: INFO/MainProcess] 文件已下载: kb-paper-original-md/arxiv/2025/2501.02441.md -> Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\af63e022-0cba-4b2b-9bde-dc1f243c4776\2501.02441.md
+[2026-01-07 19:12:43,156: INFO/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 文件下载完成: Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\data\temp\af63e022-0cba-4b2b-9bde-dc1f243c4776\2501.02441.md
+[2026-01-07 19:13:23,105: INFO/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 开始调用生成接口...
+[2026-01-07 19:13:30,771: INFO/MainProcess] HTTP Request: POST http://localhost:5003/p2s/api/chat "HTTP/1.1 200 OK"
+[2026-01-07 19:13:51,249: ERROR/MainProcess] [af63e022-0cba-4b2b-9bde-dc1f243c4776] 接口调用失败: API 调用失败: Processing 1 file(s)...
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 252, in call_api_node
+    raise Exception(f"API 调用失败: {result.get('message')}")
+Exception: API 调用失败: Processing 1 file(s)...
+
+[2026-01-07 19:13:51,267: ERROR/MainProcess] 智能体执行失败: API 调用失败: Processing 1 file(s)...
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 490, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+    ...<29 lines>...
+            chunks.append(chunk)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+    ...<13 lines>...
+            yield o
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "X:\Anaconda\Anaconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 252, in call_api_node
+    raise Exception(f"API 调用失败: {result.get('message')}")
+Exception: API 调用失败: Processing 1 file(s)...
+During task with name 'call_api' and id '93e84a1f-096f-4166-fe62-d69adc23f10f'
+
+[2026-01-07 19:13:51,268: ERROR/MainProcess] 任务失败: af63e022-0cba-4b2b-9bde-dc1f243c4776, 错误: API 调用失败: Processing 1 file(s)...
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: API 调用失败: Processing 1 file(s)...
+[2026-01-07 19:13:53,316: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-07 19:13:53,319: INFO/MainProcess] 已清理临时文件: af63e022-0cba-4b2b-9bde-dc1f243c4776
+[2026-01-07 19:13:53,323: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[af63e022-0cba-4b2b-9bde-dc1f243c4776] raised unexpected: Exception('API 调用失败: Processing 1 file(s)...')
+Traceback (most recent call last):
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ~~~^^^^^^^^^^^^^^^^^
+  File "Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\app\trace.py", line 760, in __protected_call__
+    return self.run(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: API 调用失败: Processing 1 file(s)...
+[2026-01-07 19:31:01,781: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:31:03,834: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:31:03,836: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:31:05,877: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:31:13,043: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:31:18,614: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[10bccd2b-27fe-4eb6-9653-331fd8a17a99] received
+[2026-01-07 19:31:18,663: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-07 19:31:23,264: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:34:59,709: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:35:01,778: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:35:01,780: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:35:03,823: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:35:10,996: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:35:21,224: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:37:49,999: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[7857fcc3-7fa5-4b99-9bca-6adde6b385c3] received
+[2026-01-07 19:37:50,042: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-07 19:55:20,992: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:55:23,046: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:55:23,047: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:55:25,077: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:55:32,201: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:55:42,423: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:56:58,896: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:57:00,961: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-07 19:57:00,963: WARNING/MainProcess] Z:\Python\venv\slide_svc_venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2026-01-07 19:57:03,014: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-07 19:57:10,153: INFO/MainProcess] mingle: all alone
+[2026-01-07 19:57:20,367: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-07 19:58:00,539: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[97aed6d1-36c3-4a2b-b69c-3d151ad282e9] received
+[2026-01-07 19:58:00,564: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-08 09:39:15,783: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-08 09:39:17,907: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-08 09:39:25,214: INFO/MainProcess] mingle: all alone
+[2026-01-08 09:39:35,724: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-08 09:52:14,858: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-08 09:52:16,911: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-08 10:01:14,643: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-08 10:01:16,676: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-08 10:01:23,820: WARNING/MainProcess] X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2026-01-08 10:01:23,821: INFO/MainProcess] mingle: all alone
+[2026-01-08 10:01:33,987: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-08 10:13:07,860: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-08 10:13:09,904: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-08 10:13:17,081: WARNING/MainProcess] X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2026-01-08 10:13:17,081: INFO/MainProcess] mingle: all alone
+[2026-01-08 10:13:27,348: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-08 10:20:11,207: INFO/MainProcess] Connected to redis://:**@localhost:6379/0
+[2026-01-08 10:20:13,244: INFO/MainProcess] mingle: searching for neighbors
+[2026-01-08 10:20:20,447: WARNING/MainProcess] X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@DESKTOP-4FIVBBU.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2026-01-08 10:20:20,448: INFO/MainProcess] mingle: all alone
+[2026-01-08 10:20:30,666: INFO/MainProcess] celery@DESKTOP-4FIVBBU ready.
+[2026-01-08 10:25:46,683: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[f41dd0ee-298b-42c3-9f98-2191b3c75596] received
+[2026-01-08 10:25:46,742: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-08 10:57:44,340: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[56585030-5600-4b26-9eca-5fc612810962] received
+[2026-01-08 10:57:46,486: INFO/MainProcess] 开始执行任务: 56585030-5600-4b26-9eca-5fc612810962, update_system=True
+[2026-01-08 10:57:49,568: INFO/MainProcess] MongoDB 连接成功: slide_svc
+[2026-01-08 10:57:49,581: INFO/MainProcess] [56585030-5600-4b26-9eca-5fc612810962] 开始参数校验...
+[2026-01-08 10:57:49,584: INFO/MainProcess] [56585030-5600-4b26-9eca-5fc612810962] 任务状态已更新为 running
+[2026-01-08 10:57:49,585: INFO/MainProcess] [56585030-5600-4b26-9eca-5fc612810962] 开始下载文件...
+[2026-01-08 10:57:49,586: INFO/MainProcess] 初始化MinIO客户端: endpoint=10.0.62.206:59003, access_key=admin...
+[2026-01-08 10:57:49,586: INFO/MainProcess] MinIO客户端初始化成功
+[2026-01-08 10:57:49,647: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A216271E2B90, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 10:57:49,648: ERROR/MainProcess] [56585030-5600-4b26-9eca-5fc612810962] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A216271E2B90, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 10:57:49,667: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A216271E2B90, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 10:57:49,667: ERROR/MainProcess] 任务失败: 56585030-5600-4b26-9eca-5fc612810962, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 10:57:51,699: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 10:57:51,701: INFO/MainProcess] 已清理临时文件: 56585030-5600-4b26-9eca-5fc612810962
+[2026-01-08 10:57:51,708: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[56585030-5600-4b26-9eca-5fc612810962] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:03:02,877: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[4076bb0f-ad21-471f-b2e8-d6e23eaf3696] received
+[2026-01-08 11:03:02,882: INFO/MainProcess] 开始执行任务: 4076bb0f-ad21-471f-b2e8-d6e23eaf3696, update_system=True
+[2026-01-08 11:03:02,946: INFO/MainProcess] [4076bb0f-ad21-471f-b2e8-d6e23eaf3696] 开始参数校验...
+[2026-01-08 11:03:02,950: INFO/MainProcess] [4076bb0f-ad21-471f-b2e8-d6e23eaf3696] 任务状态已更新为 running
+[2026-01-08 11:03:02,954: INFO/MainProcess] [4076bb0f-ad21-471f-b2e8-d6e23eaf3696] 开始下载文件...
+[2026-01-08 11:03:02,988: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A25F1BBBA6B7, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:03:02,989: ERROR/MainProcess] [4076bb0f-ad21-471f-b2e8-d6e23eaf3696] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A25F1BBBA6B7, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:03:02,998: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    client.fget_object(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A25F1BBBA6B7, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 11:03:02,998: ERROR/MainProcess] 任务失败: 4076bb0f-ad21-471f-b2e8-d6e23eaf3696, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:03:03,001: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 11:03:03,003: INFO/MainProcess] 已清理临时文件: 4076bb0f-ad21-471f-b2e8-d6e23eaf3696
+[2026-01-08 11:03:03,006: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[4076bb0f-ad21-471f-b2e8-d6e23eaf3696] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:09:25,282: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[0f7dfab5-e041-4648-880b-fa9b40ee3dcb] received
+[2026-01-08 11:09:25,283: INFO/MainProcess] 开始执行任务: 0f7dfab5-e041-4648-880b-fa9b40ee3dcb, update_system=True
+[2026-01-08 11:09:25,308: INFO/MainProcess] [0f7dfab5-e041-4648-880b-fa9b40ee3dcb] 开始参数校验...
+[2026-01-08 11:09:25,311: INFO/MainProcess] [0f7dfab5-e041-4648-880b-fa9b40ee3dcb] 任务状态已更新为 running
+[2026-01-08 11:09:25,314: INFO/MainProcess] [0f7dfab5-e041-4648-880b-fa9b40ee3dcb] 开始下载文件...
+[2026-01-08 11:09:25,346: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A2B821C6ECE1, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:09:25,347: ERROR/MainProcess] [0f7dfab5-e041-4648-880b-fa9b40ee3dcb] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A2B821C6ECE1, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:09:25,351: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    self._minio_service.download_file(
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    client = self._get_client()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A2B821C6ECE1, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    final_state = await self.app.ainvoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 11:09:25,351: ERROR/MainProcess] 任务失败: 0f7dfab5-e041-4648-880b-fa9b40ee3dcb, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:09:25,353: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 11:09:25,355: INFO/MainProcess] 已清理临时文件: 0f7dfab5-e041-4648-880b-fa9b40ee3dcb
+[2026-01-08 11:09:25,357: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[0f7dfab5-e041-4648-880b-fa9b40ee3dcb] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    raise Exception(result.get("error_message", "任务执行失败"))
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:40:00,006: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] received
+[2026-01-08 11:40:00,018: INFO/MainProcess] 开始执行任务: 9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d, update_system=True
+[2026-01-08 11:40:00,074: INFO/MainProcess] [9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] 开始参数校验...
+[2026-01-08 11:40:00,084: INFO/MainProcess] [9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] 任务状态已更新为 running
+[2026-01-08 11:40:00,087: INFO/MainProcess] [9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] 开始下载文件...
+[2026-01-08 11:40:00,128: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A46350982E84, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:40:00,128: ERROR/MainProcess] [9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A46350982E84, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:40:00,138: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    object_name=object_name,
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A46350982E84, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    return {
+             
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 11:40:00,140: ERROR/MainProcess] 任务失败: 9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:40:00,145: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 11:40:00,146: INFO/MainProcess] 已清理临时文件: 9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d
+[2026-01-08 11:40:00,153: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[9b0bc8fd-4d9e-4992-9a97-e4e27eb5387d] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:41:57,876: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[170a31eb-7289-4d3e-aefd-f4540a3ac852] received
+[2026-01-08 11:41:57,878: INFO/MainProcess] 开始执行任务: 170a31eb-7289-4d3e-aefd-f4540a3ac852, update_system=False
+[2026-01-08 11:41:57,892: INFO/MainProcess] [170a31eb-7289-4d3e-aefd-f4540a3ac852] 开始参数校验...
+[2026-01-08 11:41:57,894: INFO/MainProcess] [170a31eb-7289-4d3e-aefd-f4540a3ac852] 任务状态已更新为 running
+[2026-01-08 11:41:57,895: INFO/MainProcess] [170a31eb-7289-4d3e-aefd-f4540a3ac852] 开始下载文件...
+[2026-01-08 11:41:57,927: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A47EBDFDA217, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:41:57,927: ERROR/MainProcess] [170a31eb-7289-4d3e-aefd-f4540a3ac852] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A47EBDFDA217, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:41:57,932: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    object_name=object_name,
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A47EBDFDA217, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    return {
+             
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 11:41:57,933: ERROR/MainProcess] 任务失败: 170a31eb-7289-4d3e-aefd-f4540a3ac852, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:41:57,934: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 11:41:57,934: INFO/MainProcess] 已清理临时文件: 170a31eb-7289-4d3e-aefd-f4540a3ac852
+[2026-01-08 11:41:57,937: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[170a31eb-7289-4d3e-aefd-f4540a3ac852] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:54:15,602: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[bac01bf6-2bc8-4abd-ab08-dfd8158ef826] received
+[2026-01-08 11:54:15,603: INFO/MainProcess] 开始执行任务: bac01bf6-2bc8-4abd-ab08-dfd8158ef826, update_system=True
+[2026-01-08 11:54:15,630: INFO/MainProcess] [bac01bf6-2bc8-4abd-ab08-dfd8158ef826] 开始参数校验...
+[2026-01-08 11:54:15,632: INFO/MainProcess] [bac01bf6-2bc8-4abd-ab08-dfd8158ef826] 任务状态已更新为 running
+[2026-01-08 11:54:15,634: INFO/MainProcess] [bac01bf6-2bc8-4abd-ab08-dfd8158ef826] 开始下载文件...
+[2026-01-08 11:54:15,666: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A52A81EDF944, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:54:15,666: ERROR/MainProcess] [bac01bf6-2bc8-4abd-ab08-dfd8158ef826] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A52A81EDF944, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 11:54:15,669: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    )
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888A52A81EDF944, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    "status": final_state.get("status"),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 11:54:15,670: ERROR/MainProcess] 任务失败: bac01bf6-2bc8-4abd-ab08-dfd8158ef826, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 11:54:15,672: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 11:54:15,674: INFO/MainProcess] 已清理临时文件: bac01bf6-2bc8-4abd-ab08-dfd8158ef826
+[2026-01-08 11:54:15,677: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[bac01bf6-2bc8-4abd-ab08-dfd8158ef826] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    if result.get("status") == "failed":
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:32:44,011: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[5c827b3b-630e-4864-b4ef-47d580f90340] received
+[2026-01-08 13:32:44,067: ERROR/MainProcess] Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+                                   ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\28\AppData\Roaming\Python\Python313\site-packages\celery\app\trace.py", line 683, in fast_trace_task
+    try:
+ValueError: not enough values to unpack (expected 3, got 0)
+[2026-01-08 13:42:48,462: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[405a60ba-1d82-4c4e-9b93-df37777d1419] received
+[2026-01-08 13:42:48,506: INFO/MainProcess] 开始执行任务: 405a60ba-1d82-4c4e-9b93-df37777d1419, update_system=True
+[2026-01-08 13:42:48,560: INFO/MainProcess] [405a60ba-1d82-4c4e-9b93-df37777d1419] 开始参数校验...
+[2026-01-08 13:42:48,566: INFO/MainProcess] [405a60ba-1d82-4c4e-9b93-df37777d1419] 任务状态已更新为 running
+[2026-01-08 13:42:48,568: INFO/MainProcess] [405a60ba-1d82-4c4e-9b93-df37777d1419] 开始下载文件...
+[2026-01-08 13:42:48,609: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB16ED4D3582, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:42:48,610: ERROR/MainProcess] [405a60ba-1d82-4c4e-9b93-df37777d1419] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB16ED4D3582, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:42:48,618: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    # 去除开头的斜杠
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB16ED4D3582, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    logger.info(f"[{result_id}] 用户任务已标记为失败: {error_message}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 13:42:48,619: ERROR/MainProcess] 任务失败: 405a60ba-1d82-4c4e-9b93-df37777d1419, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:42:48,623: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 13:42:48,624: INFO/MainProcess] 已清理临时文件: 405a60ba-1d82-4c4e-9b93-df37777d1419
+[2026-01-08 13:42:48,628: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[405a60ba-1d82-4c4e-9b93-df37777d1419] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:48:04,009: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[9cbc03af-b81a-418c-9ebe-b10b1462fd9a] received
+[2026-01-08 13:48:04,011: INFO/MainProcess] 开始执行任务: 9cbc03af-b81a-418c-9ebe-b10b1462fd9a, update_system=True
+[2026-01-08 13:48:04,056: INFO/MainProcess] [9cbc03af-b81a-418c-9ebe-b10b1462fd9a] 开始参数校验...
+[2026-01-08 13:48:04,059: INFO/MainProcess] [9cbc03af-b81a-418c-9ebe-b10b1462fd9a] 任务状态已更新为 running
+[2026-01-08 13:48:04,060: INFO/MainProcess] [9cbc03af-b81a-418c-9ebe-b10b1462fd9a] 开始下载文件...
+[2026-01-08 13:48:04,092: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB6062058AC0, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:48:04,093: ERROR/MainProcess] [9cbc03af-b81a-418c-9ebe-b10b1462fd9a] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB6062058AC0, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:48:04,100: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    # 去除开头的斜杠
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888AB6062058AC0, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    source: 论文来源（可选）
+                ^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 13:48:04,100: ERROR/MainProcess] 任务失败: 9cbc03af-b81a-418c-9ebe-b10b1462fd9a, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:48:04,105: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 13:48:04,106: INFO/MainProcess] 已清理临时文件: 9cbc03af-b81a-418c-9ebe-b10b1462fd9a
+[2026-01-08 13:48:04,115: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[9cbc03af-b81a-418c-9ebe-b10b1462fd9a] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:54:43,343: INFO/MainProcess] Task celery_app.tasks.generate_slides_task[c17ae9ab-e854-4566-90eb-34b20131553e] received
+[2026-01-08 13:54:43,344: INFO/MainProcess] 开始执行任务: c17ae9ab-e854-4566-90eb-34b20131553e, update_system=True
+[2026-01-08 13:54:43,391: INFO/MainProcess] [c17ae9ab-e854-4566-90eb-34b20131553e] 开始参数校验...
+[2026-01-08 13:54:43,394: INFO/MainProcess] [c17ae9ab-e854-4566-90eb-34b20131553e] 任务状态已更新为 running
+[2026-01-08 13:54:43,395: INFO/MainProcess] [c17ae9ab-e854-4566-90eb-34b20131553e] 开始下载文件...
+[2026-01-08 13:54:43,428: ERROR/MainProcess] 下载文件失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888ABBD5C7F5D37, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:54:43,429: ERROR/MainProcess] [c17ae9ab-e854-4566-90eb-34b20131553e] 文件下载失败: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888ABBD5C7F5D37, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+[2026-01-08 13:54:43,439: ERROR/MainProcess] 智能体执行失败: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langchain_core\runnables\config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 185, in download_file_node
+    # 1. 获取默认 Bucket，并增加防御性检查
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\services\minio_service.py", line 150, in download_file
+    str: 本地文件路径
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 1122, in fget_object
+    stat = self.stat_object(
+           ^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 2260, in stat_object
+    response = self._execute(
+               ^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 441, in _execute
+    region = self._get_region(bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 498, in _get_region
+    response = self._url_open(
+               ^^^^^^^^^^^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\api.py", line 427, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchBucket, message: The specified bucket does not exist, resource: /arxiv, request_id: 1888ABBD5C7F5D37, host_id: e2164b43-0d2c-424c-95f8-61ad115fc04a, bucket_name: arxiv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\agents\slides_agent.py", line 498, in run
+    """标记任务失败
+                 ^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 3158, in ainvoke
+    async for chunk in self.astream(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\main.py", line 2971, in astream
+    async for _ in runner.atick(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\langgraph\pregel\_retry.py", line 160, in arun_with_retry
+    exc.add_note(f"During task with name '{task.name}' and id '{task.id}'")
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\minio\error.py", line 135, in __setattr__
+    raise AttributeError(
+AttributeError: S3Error is frozen and does not allow attribute assignment
+
+[2026-01-08 13:54:43,440: ERROR/MainProcess] 任务失败: c17ae9ab-e854-4566-90eb-34b20131553e, 错误: S3Error is frozen and does not allow attribute assignment
+Traceback (most recent call last):
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment
+[2026-01-08 13:54:43,442: INFO/MainProcess] 运行中任务数减少: 0
+[2026-01-08 13:54:43,444: INFO/MainProcess] 已清理临时文件: c17ae9ab-e854-4566-90eb-34b20131553e
+[2026-01-08 13:54:43,446: ERROR/MainProcess] Task celery_app.tasks.generate_slides_task[c17ae9ab-e854-4566-90eb-34b20131553e] raised unexpected: Exception('S3Error is frozen and does not allow attribute assignment')
+Traceback (most recent call last):
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 479, in trace_task
+    except Reject as exc:
+                     ^^^^^
+  File "X:\Anaconda\envs\slide-svc\Lib\site-packages\celery\app\trace.py", line 779, in __protected_call__
+  File "Z:\PythonWorkSpace\sophyverse-platform-backend\src\slide-svc\celery_app\tasks.py", line 98, in generate_slides_task
+    logger.info(f"任务执行完成: {result_id}, status={result.get('status')}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: S3Error is frozen and does not allow attribute assignment

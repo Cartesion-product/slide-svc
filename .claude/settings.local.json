@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"Z:\\\\PythonWorkSpace\\\\sophyverse-platform-backend\\\\src\\\\slide-svc\\\\*exception*\")",
+      "Bash(python main.py)",
+      "Bash(timeout 15 python main.py)",
+      "Bash(findstr -i \"pymongo minio celery redis\")",
+      "Bash(pip install pymongo celery redis)",
+      "Bash(pip install \"pymongo>=3.12.0,<4.0\")",
+      "Bash(pip show celery)",
+      "Bash(dir /s /b \"Z:\\\\PythonWorkSpace\\\\sophyverse-platform-backend\\\\src\\\\slide-svc\\\\logs\")",
+      "Bash(dir \"Z:\\\\PythonWorkSpace\\\\sophyverse-platform-backend\\\\src\\\\slide-svc\")"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "config": {
+    "input_path": "Z:\\PythonWorkSpace\\sophyverse-platform-backend\\src\\slide-svc\\data\\temp\\0fd12e3d-1934-485a-9aa7-b646f577efe3\\2501.11921.md",
+    "content_type": "paper",
+    "output_type": "slides",
+    "style": "academic",
+    "custom_style": null,
+    "slides_length": "dense",
+    "poster_density": "medium",
+    "fast_mode": true
+  },
+  "created_at": "2026-01-09T16:50:23.806623",
+  "stages": {
+    "rag": "pending",
+    "summary": "pending",
+    "plan": "running",
+    "generate": "pending"
+  },
+  "updated_at": "2026-01-09T16:56:12.929237",
+  "error": "'dense' is not a valid SlidesLength",
+  "session_id": "8979b4d9-5784-48f1-9ef1-f27863914cfb"
+}
